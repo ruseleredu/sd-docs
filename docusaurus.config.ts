@@ -114,10 +114,12 @@ const config: Config = {
       /** @type {import('@docusaurus/plugin-content-docs').Options} */
       {
         id: "lab", // Unique ID for this docs instance
-        path: "lab-docs", // Path to your API docs folder
-        routeBasePath: "lab", // Base URL for these docs (e.g., yoursite.com/api/...)
-        sidebarPath: require.resolve("./labsidebars.js"), // Separate sidebar for API docs
-        // ... other options specific to your API docs
+        path: "lab-docs", // Path to your LAB docs folder
+        routeBasePath: "lab", // Base URL for these docs (e.g., yoursite.com/lab/...)
+        sidebarPath: require.resolve("./labsidebars.js"), // Separate sidebar for LAB docs
+        // ... other options specific to your LAB docs
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
       },
     ],
     [
@@ -125,10 +127,12 @@ const config: Config = {
       /** @type {import('@docusaurus/plugin-content-docs').Options} */
       {
         id: "ead", // Unique ID for this docs instance
-        path: "ead-docs", // Path to your Developer docs folder
-        routeBasePath: "ead", // Base URL for these docs (e.g., yoursite.com/dev/...)
-        sidebarPath: require.resolve("./eadsidebars.js"), // Separate sidebar for Developer docs
-        // ... other options specific to your Dev docs
+        path: "ead-docs", // Path to your EaD docs folder
+        routeBasePath: "ead", // Base URL for these docs (e.g., yoursite.com/ead/...)
+        sidebarPath: require.resolve("./eadsidebars.js"), // Separate sidebar for EaD docs
+        // ... other options specific to your EaD docs
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
       },
     ],
   ],
@@ -153,16 +157,16 @@ const config: Config = {
           label: "Tutorial",
         },
         {
-          to: "/ead/intro", // Link to a page in your API docs
+          to: "/ead/intro", // Link to a page in your EaD docs
           label: "EaD",
           position: "left",
-          activeBaseRegex: `/ead/`, // Highlight when any API doc is active
+          activeBaseRegex: `/ead/`, // Highlight when any EaD doc is active
         },
         {
-          to: "/lab/intro", // Link to a page in your Dev docs
+          to: "/lab/intro", // Link to a page in your LAB docs
           label: "LABs",
           position: "left",
-          activeBaseRegex: `/lab/`, // Highlight when any Dev doc is active
+          activeBaseRegex: `/lab/`, // Highlight when any LAB doc is active
         },
         { to: "/blog", label: "Blog", position: "left" },
         {
