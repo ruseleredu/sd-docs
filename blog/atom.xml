@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ruseleredu.github.io/sd-docs/blog</id>
-    <title>Sistemas Digitais Blog</title>
+    <title>ELT72B - Sistemas Digitais Blog</title>
     <updated>2021-08-26T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ruseleredu.github.io/sd-docs/blog"/>
-    <subtitle>Sistemas Digitais Blog</subtitle>
+    <subtitle>ELT72B - Sistemas Digitais Blog</subtitle>
     <icon>https://ruseleredu.github.io/sd-docs/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
