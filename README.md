@@ -19,13 +19,15 @@ git push -u origin main
 ```
 
 [Diagrams](https://docusaurus.io/docs/markdown-features/diagrams)
-
+- https://www.youtube.com/watch?v=EACrMUdoYto
+  
 ```bash
 npm install --save @docusaurus/theme-mermaid
 ```
 
 [Math Equations](https://docusaurus.io/docs/markdown-features/math-equations)
-
+- https://www.youtube.com/watch?v=oztjeloRbvU
+  
 ```bash
 npm install --save remark-math@6 rehype-katex@7
 ```
