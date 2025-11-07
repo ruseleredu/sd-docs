@@ -12,7 +12,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
    {
     title: 'Easy to Use',
-    Svg: require('@site/static/img/class-svgrepo-com.svg').default,
+    Svg: require('@site/static/img/binary-code-algorithm-svgrepo-com.svg').default,
     description: (
       <>
         Docusaurus was designed from the ground up to be easily installed and
