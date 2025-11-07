@@ -18,10 +18,35 @@ function HomepageHeader() {
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
+           <Link
+            className="button button--secondary button--lg"
+            href="https://moodle.utfpr.edu.br/course/view.php?id=27864"
+          >
+            EaD 🌎
+          </Link>
+            <Link
+            className="button button--secondary button--lg"
+            href="https://moodle.utfpr.edu.br/course/view.php?id=28604"
+          >
+            LABs 🌎
+          </Link>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            to="/lab/intro"
+          >
+            LABs 📝
+          </Link>
+             <Link
+            className="button button--secondary button--lg"
+            to="/ead/intro"
+          >
+            EaD 📝
+          </Link>
+          <Link
+            className="button button--secondary button--lg"
+            to="/docs/intro"
+          >
+            Docs 📝
           </Link>
         </div>
       </div>
