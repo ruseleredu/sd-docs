@@ -20,8 +20,8 @@ const utc3Time = formatter.format(new Date());
 const COPYRIGHT_STRING = `Copyright © ${new Date().getFullYear()} sd-docs, Inc. Built with Docusaurus at ${utc3Time} UTC-3.`;
 
 const config: Config = {
-  title: "Sistemas Digitais",
-  tagline: "Dinosaurs are cool",
+  title: "ELT72B - Sistemas Digitais",
+  tagline: "Possibilitar ao aluno analisar, sintetizar e desenvolver circuitos digitais combinacionais e sequenciais.",
   favicon: "img/favicon.ico",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -114,9 +114,9 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: "My Site",
+      title: "ELT72B",
       logo: {
-        alt: "My Site Logo",
+        alt: "ELT72B Logo",
         src: "img/logo.svg",
       },
       items: [
