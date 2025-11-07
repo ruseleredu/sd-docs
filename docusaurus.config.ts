@@ -180,41 +180,163 @@ const config: Config = {
       style: "dark",
       links: [
         {
-          title: "Docs",
+          title: "UTFPR",
           items: [
             {
-              label: "Tutorial",
-              to: "/docs/intro",
+              label: "Moodle",
+              href: "https://moodle.utfpr.edu.br/",
+            },
+            {
+              label: "Webmail",
+              href: "https://webmail.utfpr.edu.br/",
+            },
+            {
+              label: "Sistemas",
+              href: "https://sistemas2.utfpr.edu.br/",
+            },
+            {
+              label: "SEI",
+              href: "https://sei.utfpr.edu.br/",
+            },
+            {
+              label: "Chat",
+              href: "https://chat.utfpr.edu.br/",
+            },
+            {
+              label: "Ajuda",
+              href: "https://ajuda.utfpr.edu.br/",
+            },
+            {
+              label: "Calendário",
+              href: "https://www.utfpr.edu.br/alunos/calendario",
+            },
+            {
+              label: "TCC",
+              href: "https://nupet.daelt.ct.utfpr.edu.br/tcc/engenharia/index.html",
             },
           ],
         },
         {
-          title: "Community",
+          title: "Sistemas",
           items: [
             {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
+              label: "Sigepe",
+              href: "https://sougov.sigepe.gov.br/sougov/Home",
             },
             {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
+              label: "Consulta Diários",
+              href: "https://sistemas2.utfpr.edu.br/url/1141",
             },
             {
-              label: "X",
-              href: "https://x.com/docusaurus",
+              label: "Permanências",
+              href: "https://sistemas2.utfpr.edu.br/url/1026",
+            },
+            {
+              label: "Planejamento",
+              href: "https://sistemas2.utfpr.edu.br/url/1890",
+            },
+            {
+              label: "Lançamentos",
+              href: "https://sistemas2.utfpr.edu.br/url/1514",
+            },
+            {
+              label: "Mapa de Professor",
+              href: "https://sistemas2.utfpr.edu.br/url/1022",
+            },
+            {
+              label: "Mapa de Sala",
+              href: "https://sistemas2.utfpr.edu.br/url/1934",
             },
           ],
         },
         {
-          title: "More",
+          title: "Desenvolvedor",
           items: [
             {
-              label: "Blog",
-              to: "/blog",
+              label: "Visual Studio Code",
+              href: "https://code.visualstudio.com/download",
+            },
+            {
+              label: "Git SCM",
+              href: "https://git-scm.com/downloads",
+            },
+            {
+              label: "GitHub CLI",
+              href: "https://cli.github.com/",
+            },
+            {
+              label: "GitHub Desktop",
+              href: "https://desktop.github.com/download/",
+            },
+            {
+              label: "PlatformIO",
+              href: "https://platformio.org//install/ide?install=vscode",
+            },
+            {
+              label: "WinGet",
+              href: "https://winget.run/",
+            },
+          ],
+        },
+          {
+          title: "Ferramentas TODO",
+          items: [
+            {
+              label: "Visual Studio Code",
+              href: "https://code.visualstudio.com/download",
+            },
+            {
+              label: "Git SCM",
+              href: "https://git-scm.com/downloads",
+            },
+            {
+              label: "GitHub CLI",
+              href: "https://cli.github.com/",
+            },
+            {
+              label: "GitHub Desktop",
+              href: "https://desktop.github.com/download/",
+            },
+            {
+              label: "PlatformIO",
+              href: "https://platformio.org//install/ide?install=vscode",
+            },
+            {
+              label: "WinGet",
+              href: "https://winget.run/",
+            },
+          ],
+        },
+        {
+          title: "Social",
+          items: [
+            {
+              label: "YouTube",
+              href: "https://www.youtube.com/@Rusla82",
+            },
+            {
+              label: "YouTube Edu",
+              href: "https://www.youtube.com/@adrianoruseler653",
             },
             {
               label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
+              href: "https://github.com/AdrianoRuseler/",
+            },
+            {
+              label: "GitHub Edu",
+              href: "https://github.com/ruseleredu/",
+            },
+            {
+              label: "LinkedIn",
+              href: "https://www.linkedin.com/in/adrianoruseler/",
+            },
+            {
+              label: "ResearchGate",
+              href: "https://www.researchgate.net/profile/Adriano-Ruseler/",
+            },
+            {
+              label: "ORCID",
+              href: "https://orcid.org/0000-0003-0915-9483",
             },
           ],
         },
