@@ -21,7 +21,8 @@ const COPYRIGHT_STRING = `Copyright © ${new Date().getFullYear()} sd-docs, Inc.
 
 const config: Config = {
   title: "ELT72B - Sistemas Digitais",
-  tagline: "Possibilitar ao aluno analisar, sintetizar e desenvolver circuitos digitais combinacionais e sequenciais.",
+  tagline:
+    "Possibilitar ao aluno analisar, sintetizar e desenvolver circuitos digitais combinacionais e sequenciais.",
   favicon: "img/favicon.ico",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -107,6 +108,31 @@ const config: Config = {
     ],
   ],
 
+  plugins: [
+    [
+      "@docusaurus/plugin-content-docs",
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      {
+        id: "lab", // Unique ID for this docs instance
+        path: "lab-docs", // Path to your API docs folder
+        routeBasePath: "lab", // Base URL for these docs (e.g., yoursite.com/api/...)
+        sidebarPath: require.resolve("./labsidebars.js"), // Separate sidebar for API docs
+        // ... other options specific to your API docs
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      {
+        id: "ead", // Unique ID for this docs instance
+        path: "ead-docs", // Path to your Developer docs folder
+        routeBasePath: "ead", // Base URL for these docs (e.g., yoursite.com/dev/...)
+        sidebarPath: require.resolve("./eadsidebars.js"), // Separate sidebar for Developer docs
+        // ... other options specific to your Dev docs
+      },
+    ],
+  ],
+
   themeConfig: {
     // Replace with your project's social card
     image: "img/docusaurus-social-card.jpg",
@@ -125,6 +151,18 @@ const config: Config = {
           sidebarId: "tutorialSidebar",
           position: "left",
           label: "Tutorial",
+        },
+        {
+          to: "/ead/intro", // Link to a page in your API docs
+          label: "EaD",
+          position: "left",
+          activeBaseRegex: `/ead/`, // Highlight when any API doc is active
+        },
+        {
+          to: "/lab/intro", // Link to a page in your Dev docs
+          label: "LABs",
+          position: "left",
+          activeBaseRegex: `/lab/`, // Highlight when any Dev doc is active
         },
         { to: "/blog", label: "Blog", position: "left" },
         {
