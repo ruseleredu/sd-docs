@@ -37,16 +37,6 @@ export default function LabTable({ index, internal = true }: LabTableProps) {
                 renderLink(row.tarefa, row.hrefi, row.hrefe, internal),
             className: "text-center",
         },
-        {
-            header: "Template",
-            accessor: (row) =>
-                renderLink(
-                    row.templateLabel,
-                    row.templateHrefi,
-                    row.templateHrefe,
-                    internal
-                ),
-        },
         { header: "Início", accessor: (row) => row.start },
         { header: "Fim", accessor: (row) => row.end },
         { header: "Conteúdo", accessor: (row) => row.conteudo },
