@@ -19,6 +19,32 @@ const formatter = new Intl.DateTimeFormat("pt-BR", {
 const utc3Time = formatter.format(new Date());
 const COPYRIGHT_STRING = `Copyright © ${new Date().getFullYear()} sd-docs, Inc. Built with Docusaurus at ${utc3Time} UTC-3.`;
 
+// 1. Import the labData array
+// https://gemini.google.com/share/c52111cbf825
+// Adjust the path as needed.
+const { labData } = require('./src/data/labData');
+// OR: import { labData } from './src/data/labData'; 
+
+// 2. Create the Docusaurus-compatible array format
+const labDropdownItems = labData.map(lab => ({
+  // Docusaurus expects 'label'. We use your 'conteudo' property for the text.
+  //label: lab.conteudo,
+  label: `${lab.tarefa} - ${lab.conteudo}`,
+  // Docusaurus expects 'to' (for internal links). We use your 'hrefi' property.
+  to: lab.hrefi,
+}));
+
+const { quizData } = require('./src/data/quizData');
+
+// 2. Create the Docusaurus-compatible array format
+const quizDropdownItems = quizData.map(quiz => ({
+  // Docusaurus expects 'label'. We use your 'descricao' property for the text.
+  //label: lab.conteudo,
+  label: `${quiz.quiz} - ${quiz.descricao}`,
+  // Docusaurus expects 'to' (for internal links). We use your 'hrefi' property.
+  to: quiz.hrefi,
+}));
+
 const config: Config = {
   title: "ELT72B - Sistemas Digitais",
   tagline:
@@ -159,14 +185,22 @@ const config: Config = {
         {
           to: "/ead/intro", // Link to a page in your EaD docs
           label: "EaD",
+          type: "dropdown",
           position: "left",
           activeBaseRegex: `/ead/`, // Highlight when any EaD doc is active
+          items: [
+            ...quizDropdownItems,
+          ],
         },
         {
           to: "/lab/intro", // Link to a page in your LAB docs
           label: "LABs",
+          type: "dropdown",
           position: "left",
           activeBaseRegex: `/lab/`, // Highlight when any LAB doc is active
+          items: [
+            ...labDropdownItems,
+          ],
         },
         { to: "/blog", label: "Blog", position: "left" },
         {
