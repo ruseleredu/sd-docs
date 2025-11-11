@@ -1,10 +1,10 @@
 import LabTable from '@site/src/components/LabTable';
 
-# Laboratório 00
+# Laboratório 04
 
 <!-- Tabela com link para atividade, inicio, fim e descrição do LAB! -->
 <div style={{ display: "flex", justifyContent: "center" }}>
-  <LabTable index={0} internal={false} />
+  <LabTable index={4} internal={false} />
 </div>
 
 ---
