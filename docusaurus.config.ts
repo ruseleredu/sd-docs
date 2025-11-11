@@ -307,29 +307,29 @@ const config: Config = {
               href: "https://platformio.org//install/ide?install=vscode",
             },
             {
-              label: "WinGet",
-              href: "https://winget.run/",
+              label: "Arduino IDE",
+              href: "https://www.arduino.cc/en/software/",
             },
           ],
         },
           {
-          title: "Ferramentas TODO",
+          title: "Ferramentas",
           items: [
             {
-              label: "Visual Studio Code",
-              href: "https://code.visualstudio.com/download",
+              label: "Karnaugh Map Solver",
+              href: "https://wredan.github.io/Karnaugh-Map-Solver/",
             },
             {
-              label: "Git SCM",
-              href: "https://git-scm.com/downloads",
+              label: "Tinkercad Circuits",
+              href: "https://www.tinkercad.com/circuits",
             },
             {
-              label: "GitHub CLI",
-              href: "https://cli.github.com/",
+              label: "Logic circuit simplification",
+              href: "http://www.32x8.com/index.html",
             },
             {
-              label: "GitHub Desktop",
-              href: "https://desktop.github.com/download/",
+              label: "Quine McCluskey Solver",
+              href: "https://quinemccluskey.geeekyboy.com/",
             },
             {
               label: "PlatformIO",
