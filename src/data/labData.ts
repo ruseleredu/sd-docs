@@ -16,109 +16,106 @@ export const labData: LabRow[] = [
     {
         tarefa: "LAB00",
         hrefi: "/lab/LAB00", // internal page
-        hrefe: "https://moodle.utfpr.edu.br/mod/assign/view.php?id=1748058", // external
+        hrefe: "https://moodle.utfpr.edu.br/course/section.php?id=384200", // external
         start: "18-Aug-2025",
         end: "25-Aug-2025",
-        conteudo: "Apresentação da Disciplina; Materiais utilizados na disciplina;",
+        conteudo: "Apresentação da Disciplina; Materiais utilizados na disciplina; Formação dos grupos;",
     },
     {
         tarefa: "LAB01",
         hrefi: "/lab/LAB01",
-        hrefe: "https://moodle.utfpr.edu.br/mod/assign/view.php?id=1948813", // external
+        hrefe: "https://moodle.utfpr.edu.br/course/section.php?id=384201", // external
 
         start: "25-Aug-2025",
         end: "01-Sep-2025",
-        conteudo: "Revisão da programação em C;",
+        conteudo: "Utilização da matriz de contatos; Utilização de equipamentos; Regras do Laboratório;",
     },
     {
         tarefa: "LAB02",
         hrefi: "/lab/LAB02",
-        hrefe: "https://moodle.utfpr.edu.br/mod/assign/view.php?id=1761057", // external
+        hrefe: "https://moodle.utfpr.edu.br/course/section.php?id=380901", // external
 
         start: "01-Sep-2025",
         end: "08-Sep-2025",
-        conteudo: "Processo de compilação, gravação e commit de código;",
+        conteudo: "Portas Lógicas; Tensões de Entrada e Saída - Famílias Lógicas;",
     },
     {
         tarefa: "LAB03",
         hrefi: "/lab/LAB03",
-        hrefe: "https://moodle.utfpr.edu.br/mod/assign/view.php?id=1769726", // external
+        hrefe: "https://moodle.utfpr.edu.br/course/section.php?id=380902", // external
 
         start: "15-Sep-2025",
         end: "22-Sep-2025",
-        conteudo: "Arquitetura de microcontroladores; Pinos de propósito geral (GPIO);",
-        //  conteudo: "Interrupções via GPIO e Temporizadores (Timers);",
+        conteudo: "Portas inversoras, E, OU, NE e NOU (Roteiro 3.2);",
     },
     {
         tarefa: "LAB04",
         hrefi: "/lab/LAB04",
-        hrefe: "https://moodle.utfpr.edu.br/mod/assign/view.php?id=1770581", // external
+        hrefe: "https://moodle.utfpr.edu.br/course/section.php?id=380903", // external
 
         start: "22-Sep-2025",
         end: "29-Sep-2025",
-        conteudo: "Interrupções via GPIO e Temporizadores (Timers);",
+        conteudo: "Equivalência entre funções lógicas (Roteiro 4.1);",
         //   conteudo: "Módulo PWM; Conversor ADC;",
     },
     {
         tarefa: "LAB05",
         hrefi: "/lab/LAB05",
-        hrefe: "https://moodle.utfpr.edu.br/mod/assign/view.php?id=1773187", // external
+        hrefe: "hhttps://moodle.utfpr.edu.br/course/section.php?id=387986", // external
 
         start: "29-Sep-2025",
         end: "06-Oct-2025",
-        conteudo: "Módulo PWM; Conversor ADC;",
+        conteudo: "Avaliação de uma tabela verdade - I (Roteiro 4.2) e Equações Lógicas descritas em Linguagem C;",
         // conteudo: "DMA: Direct memory access (Acesso direto à memória);",
     },
     {
         tarefa: "LAB06",
         hrefi: "/lab/LAB06",
-        hrefe: "https://moodle.utfpr.edu.br/mod/assign/view.php?id=1776628", // external
+        hrefe: "https://moodle.utfpr.edu.br/course/section.php?id=387992", // external
 
         start: "06-Oct-2025",
         end: "13-Oct-2025",
-        conteudo: "Uso do STM32CubeMonitor; Visualização de variáveis;",
+        conteudo: "Multiplexador (Roteiro 5.3).",
     },
     {
         tarefa: "LAB07",
         hrefi: "/lab/LAB07",
-        hrefe: "https://moodle.utfpr.edu.br/mod/assign/view.php?id=1782502", // external
+        hrefe: "https://moodle.utfpr.edu.br/course/section.php?id=387993", // external
 
         start: "13-Oct-2025",
         end: "20-Oct-2025",
-        //  conteudo: "Uso do STM32CubeMonitor; Visualização de variáveis;",
-        conteudo: "DMA: Direct memory access (Acesso direto à memória);",
-        // conteudo: "Uso do STM32CubeMonitor; MQTT, IoT;",
+        conteudo: "Demultiplexador (Roteiro 5.4);",
     },
     {
         tarefa: "LAB08",
         hrefi: "/lab/LAB08",
-        hrefe: "https://moodle.utfpr.edu.br/mod/assign/view.php?id=1783994", // external
+        hrefe: "https://moodle.utfpr.edu.br/course/section.php?id=392012", // external
 
         start: "03-Nov-2025",
         end: "10-Nov-2025",
-        conteudo: "Uso do STM32CubeMonitor; MQTT, IoT;",
+        conteudo: "Flip-Flop RS (Roteiro 7.1);",
         // conteudo: "Uso do STM32CubeMonitor; InfluDB;",
     },
     {
         tarefa: "LAB09",
         hrefi: "/lab/LAB09",
-        hrefe: "https://moodle.utfpr.edu.br/mod/assign/view.php?id=1889891", // external
+        hrefe: "https://moodle.utfpr.edu.br/course/section.php?id=392440", // external
 
         start: "10-Nov-2025",
         end: "17-Nov-2025",
         // conteudo: "Uso do STM32CubeMonitor; InfluDB;",
-        conteudo: "Introdução ao uso do PlatformIO;",
+        conteudo: "Contadores Assíncronos (Roteiro 9.1);",
         // conteudo: "FreeRTOS: Tarefas, Filas e Semáforos;",
     },
     {
         tarefa: "LAB10",
         hrefi: "/lab/LAB10",
-        hrefe: "https://moodle.utfpr.edu.br/mod/assign/view.php?id=1889891", // external
+        hrefe: "https://moodle.utfpr.edu.br/course/section.php?id=387994", // external
 
         start: "10-Nov-2025",
         end: "17-Nov-2025",
         // conteudo: "Uso do STM32CubeMonitor; InfluDB;",
-        conteudo: "Introdução ao FreeRTOS;",
+        conteudo: " Validação do LAB 05 com o Arduino Uno R3 SMD ou com tinkercad;",
         // conteudo: "FreeRTOS: Tarefas, Filas e Semáforos;",
     },
 
