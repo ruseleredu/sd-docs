@@ -161,6 +161,20 @@ const config: Config = {
         showLastUpdateTime: true,
       },
     ],
+     [
+      "@docusaurus/plugin-content-docs",
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      {
+        id: "utfpr", // Unique ID for this docs instance
+        path: "utfpr", // Path to your API docs folder
+        routeBasePath: "utfpr", // Base URL for these docs (e.g., yoursite.com/api/...)
+        sidebarPath: require.resolve("./sidebarsutfpr.js"), // Separate sidebar for API docs
+        // 👇 Add this line for the last update time
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        // ... other options specific to your API docs
+      },
+    ],
   ],
 
   themeConfig: {
@@ -181,6 +195,18 @@ const config: Config = {
           sidebarId: "tutorialSidebar",
           position: "left",
           label: "Tutorial",
+        },
+        {
+          label: "UTFPR",
+          to: "/utfpr/about", // Link to a page in your UTFPR docs
+          type: "dropdown",
+          position: "left",
+          items: [
+            {
+              to: "/utfpr/ELT72B/folder", // Link to a page in your UTFPR docs
+              label: "ELT72B - Sistemas Digitais",
+            },       
+          ],
         },
         {
           to: "/ead/intro", // Link to a page in your EaD docs
