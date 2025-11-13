@@ -1,47 +1,36 @@
 ---
+title: Informações gerais
 sidebar_position: 1
+description: Informações gerais sobre a disciplina ELT72B.
 ---
 
-# Tutorial Intro
+## Sistemas Digitais
 
-Let's discover **Docusaurus in less than 5 minutes**.
+### Objetivo
 
-## Getting Started
+Possibilitar ao aluno analisar, sintetizar e desenvolver circuitos digitais combinacionais e sequenciais.
 
-Get started by **creating a new site**.
+### Ementa
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+Sistemas de Numeração e Códigos; Portas Lógicas e Álgebra Booleana; Análise de CircuitosDigitais Combinacionais; Formas padrão de Funções Lógicas; Minimização de Funções Lógicas; Mapas de Karnaugh e Quine-McCluskey; Multiplexadores e Demultiplexadores; Codificadores e Decodificadores; Flip-Flops; Análise de Circuitos Digitais Seqüênciais; Síntese de Circuitos Digitais Seqüênciais; Famílias lógicas e Circuitos Integrados; Contadores; Registradores; Dispositivos de Memórias; Conversores Analógico/Digital – Digital/Analógico.
 
-### What you'll need
+### Conteúdo Programático
 
-- [Node.js](https://nodejs.org/en/download/) version 20.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+| Ordem | Ementa                                            | Conteúdo                                                                                                           |
+| :---: | ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+|   1   | Sistemas de Numeração e Códigos                   | Notação posicional Transformação binário decimal e decimal-binário. Sistemas octal e hexadecimal. Códigos binários |
+|   2   | Portas Lógicas e Álgebra Booleana                 | Funções básicas E, OU e NÃO. Funções NE, NOU e XOU. Teoremas                                                       |
+|   3   | Análise de Circuitos Digitais Combinacionais      | Obtenção de equações Realização de circuitos                                                                       |
+|   4   | Formas padrão de Funções Lógicas                  | Teorema de Morgan Realização decircuitos com portas NE                                                             |
+|   5   | Minimização de Funções Lógicas                    | Técnicas de Simplificação                                                                                          |
+|   6   | Mapas de Karnaugh e Quine-McCluskey               | Diagrama de 2 variáveis Diagramade 3 variáveis Diagrama de 4 variáveis Diagrama de 5 variáveis                     |
+|   7   | Multiplexadores e Demultiplexadores               | Multiplexador e Demultiplexador                                                                                    |
+|   8   | Codificadores e Decodificadores                   | Decodificador de 7 segmentos. Decodificador BCD decimal                                                            |
+|   9   | Flip-Flops                                        | Flip-Flop assíncronos RS e D Flip-Flop com controle                                                                |
+|  10   | Análise de Circuitos Digitais Sequênciais         | Análise de Flip-Flop RS e D com e sem controle                                                                     |
+|  11   | Síntese de Circuitos Digitais Sequênciais         | Construção de Flip-Flop RS e D com e sem controle                                                                  |
+|  12   | Famílias lógicas e Circuitos Integrados           | Famílias CMOS 4000 Família TTL 74xx, 74LSxx, 74HCxx                                                                |
+|  13   | Contadores                                        | Contadores Assincronos Contadores Síncronos                                                                        |
+|  14   | Registradores                                     | Registro paralelo (Latch) Registrosérie ( Shift)                                                                   |
+|  15   | Dispositivos de Memórias                          | RAM ROM EPROM FLASH Técnicas de implementação                                                                      |
+|  16   | Conversores Analógico/Digital e Digital/Analógico | Técnicas de conversão Tempo deconversão R e de R-2R                                                                |
