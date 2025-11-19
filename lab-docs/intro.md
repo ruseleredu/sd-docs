@@ -1,6 +1,7 @@
 ---
 title: Introdução
 description: My document description
+sidebar_position: 1
 ---
 
 import LabTable from '@site/src/components/LabTable';

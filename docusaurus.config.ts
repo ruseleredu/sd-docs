@@ -22,11 +22,11 @@ const COPYRIGHT_STRING = `Copyright © ${new Date().getFullYear()} sd-docs, Inc.
 // 1. Import the labData array
 // https://gemini.google.com/share/c52111cbf825
 // Adjust the path as needed.
-const { labData } = require('./src/data/labData');
-// OR: import { labData } from './src/data/labData'; 
+const { labData } = require("./src/data/labData");
+// OR: import { labData } from './src/data/labData';
 
 // 2. Create the Docusaurus-compatible array format
-const labDropdownItems = labData.map(lab => ({
+const labDropdownItems = labData.map((lab) => ({
   // Docusaurus expects 'label'. We use your 'conteudo' property for the text.
   //label: lab.conteudo,
   label: `${lab.tarefa} - ${lab.conteudo}`,
@@ -34,10 +34,10 @@ const labDropdownItems = labData.map(lab => ({
   to: lab.hrefi,
 }));
 
-const { quizData } = require('./src/data/quizData');
+const { quizData } = require("./src/data/quizData");
 
 // 2. Create the Docusaurus-compatible array format
-const quizDropdownItems = quizData.map(quiz => ({
+const quizDropdownItems = quizData.map((quiz) => ({
   // Docusaurus expects 'label'. We use your 'descricao' property for the text.
   //label: lab.conteudo,
   label: `${quiz.quiz} - ${quiz.descricao}`,
@@ -161,7 +161,7 @@ const config: Config = {
         showLastUpdateTime: true,
       },
     ],
-     [
+    [
       "@docusaurus/plugin-content-docs",
       /** @type {import('@docusaurus/plugin-content-docs').Options} */
       {
@@ -169,6 +169,20 @@ const config: Config = {
         path: "utfpr", // Path to your API docs folder
         routeBasePath: "utfpr", // Base URL for these docs (e.g., yoursite.com/api/...)
         sidebarPath: require.resolve("./sidebarsutfpr.js"), // Separate sidebar for API docs
+        // 👇 Add this line for the last update time
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        // ... other options specific to your API docs
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      {
+        id: "pjts", // Unique ID for this docs instance
+        path: "pjts-docs", // Path to your API docs folder
+        routeBasePath: "pjts", // Base URL for these docs (e.g., yoursite.com/api/...)
+        sidebarPath: require.resolve("./sidebarspjts.js"), // Separate sidebar for API docs
         // 👇 Add this line for the last update time
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
@@ -205,7 +219,7 @@ const config: Config = {
             {
               to: "/utfpr/ELT72B/folder", // Link to a page in your UTFPR docs
               label: "ELT72B - Sistemas Digitais",
-            },       
+            },
           ],
         },
         {
@@ -214,9 +228,7 @@ const config: Config = {
           type: "dropdown",
           position: "left",
           activeBaseRegex: `/ead/`, // Highlight when any EaD doc is active
-          items: [
-            ...quizDropdownItems,
-          ],
+          items: [...quizDropdownItems],
         },
         {
           to: "/lab/intro", // Link to a page in your LAB docs
@@ -224,11 +236,21 @@ const config: Config = {
           type: "dropdown",
           position: "left",
           activeBaseRegex: `/lab/`, // Highlight when any LAB doc is active
+          items: [...labDropdownItems],
+        },
+        {
+          label: "Projetos",
+          to: "/pjts/intro", // Link to a page in your UTFPR docs
+          type: "dropdown",
+          position: "left",
           items: [
-            ...labDropdownItems,
+            {
+              to: "/utfpr/ELT72B/folder", // Link to a page in your UTFPR docs
+              label: "ELT72B - Sistemas Digitais",
+            },
           ],
         },
-        { to: "/blog", label: "Blog", position: "left" },
+        { to: "/blog", label: "Blog", position: "right" },
         {
           href: "https://github.com/ruseleredu/sd-docs",
           label: "GitHub",
@@ -338,7 +360,7 @@ const config: Config = {
             },
           ],
         },
-          {
+        {
           title: "Ferramentas",
           items: [
             {

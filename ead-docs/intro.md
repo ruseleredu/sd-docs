@@ -1,6 +1,7 @@
 ---
 title: Introdução
 description: My EaD document description
+sidebar_position: 1
 ---
 
 import QuizTable from '@site/src/components/QuizTable';
