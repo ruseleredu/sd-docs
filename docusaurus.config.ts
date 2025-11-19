@@ -245,8 +245,20 @@ const config: Config = {
           position: "left",
           items: [
             {
-              to: "/utfpr/ELT72B/folder", // Link to a page in your UTFPR docs
-              label: "ELT72B - Sistemas Digitais",
+              to: "/pjts/2025.2", // Link to a page in your PJTS docs
+              label: "Semestre 2025.2",
+            },
+            {
+              to: "/pjts/2025.1", // Link to a page in your PJTS docs
+              label: "Semestre 2025.1",
+            },
+            {
+              to: "/pjts/2024.2", // Link to a page in your PJTS docs
+              label: "Semestre 2024.2",
+            },
+            {
+              to: "/pjts/2024.1", // Link to a page in your PJTS docs
+              label: "Semestre 2024.1",
             },
           ],
         },
