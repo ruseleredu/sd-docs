@@ -1,6 +1,6 @@
 ---
 title: Introdução
-description: My document description
+description: Introdução aos projetos da disciplina.
 sidebar_position: 1
 ---
 
