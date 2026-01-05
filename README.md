@@ -82,3 +82,7 @@ To ensure accurate Baseline data, please update:
 ```bash
 npm i baseline-browser-mapping@latest -D
 ```
+
+```bash
+npm audit fix
+```
