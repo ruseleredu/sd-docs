@@ -34,3 +34,10 @@ Sistemas de Numeração e Códigos; Portas Lógicas e Álgebra Booleana; Anális
 |  14   | Registradores                                     | Registro paralelo (Latch) Registrosérie ( Shift)                                                                   |
 |  15   | Dispositivos de Memórias                          | RAM ROM EPROM FLASH Técnicas de implementação                                                                      |
 |  16   | Conversores Analógico/Digital e Digital/Analógico | Técnicas de conversão Tempo deconversão R e de R-2R                                                                |
+
+
+## Calendário Acadêmico de 2026
+
+[Calendário Acadêmico de 2026](/pdf/CT2026.pdf)
+
+![Calendário Acadêmico de 2026](/img/CT2026.png)

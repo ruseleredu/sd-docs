@@ -2,11 +2,12 @@
 id: about
 sidebar_position: 1
 title: Calendário Acadêmico
-description: Sobre minhas disciplinas
+description: Calendário Acadêmico 2026
 ---
 
-## UTFPR-CT 2025
+## Calendário Acadêmico de 2026
 
-## UTFPR-CT 2026
+[Calendário Acadêmico de 2026](/pdf/CT2026.pdf)
 
+![Calendário Acadêmico de 2026](/img/CT2026.png)
 

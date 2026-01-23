@@ -262,7 +262,8 @@ const config: Config = {
             },
           ],
         },
-        { to: "/blog", label: "Blog", position: "right" },
+       // { to: "/blog", label: "Blog", position: "right" },
+       { to: "/pdf/CT2026.pdf", label: "Calendário", position: "right", target: '_blank'},
         {
           href: "https://github.com/ruseleredu/sd-docs",
           label: "GitHub",

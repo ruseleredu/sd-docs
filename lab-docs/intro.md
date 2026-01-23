@@ -19,3 +19,8 @@ import LabTable from '@site/src/components/LabTable';
 </div>
 
 
+## Calendário Acadêmico de 2026
+
+[Calendário Acadêmico de 2026](/pdf/CT2026.pdf)
+
+![Calendário Acadêmico de 2026](/img/CT2026.png)
