@@ -2,8 +2,8 @@ import React from 'react';
 import CodeBlock from '@theme-original/CodeBlock';
 
 export default function CodeBlockWrapper(props) {
-  const {children, className, language} = props;
-  
+  const { children, className, language } = props;
+
   // Check if the language is set to 'latex' or 'tex'
   const isLatex = className === 'language-latex' || language === 'latex' || className === 'language-tex';
 
@@ -14,19 +14,19 @@ export default function CodeBlockWrapper(props) {
     return (
       <div className="overleaf-code-wrapper">
         <CodeBlock {...props} />
-        <form 
-          action="https://www.overleaf.com/docs" 
-          method="post" 
+        <form
+          action="https://www.overleaf.com/docs"
+          method="post"
           target="_blank"
           style={{ marginTop: '-12px', marginBottom: '1.5rem' }}
         >
           <input type="hidden" name="snip" value={codeContent} />
-          <button 
-            type="submit" 
+          <button
+            type="submit"
             className="button button--secondary button--sm"
-            style={{ 
-              width: '100%', 
-              borderTopLeftRadius: 0, 
+            style={{
+              width: '100%',
+              borderTopLeftRadius: 0,
               borderTopRightRadius: 0,
               fontSize: '0.75rem',
               padding: '4px'
