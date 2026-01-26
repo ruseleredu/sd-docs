@@ -90,10 +90,10 @@ const config: Config = {
   // Include the KaTeX CSS in your config under stylesheets:
   stylesheets: [
     {
-      href: "https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/katex.min.css",
+      href: "https://cdn.jsdelivr.net/npm/katex@0.16.28/dist/katex.min.css",
       type: "text/css",
       integrity:
-        "sha384-WcoG4HRXMzYzfCgiyfrySxx90XSl2rxY5mnVY5TwtWE6KLrArNKn0T/mOgNL0Mmi",
+        "sha384-Wsr4Nh3yrvMf2KCebJchRJoVo1gTU6kcP05uRSh5NV3sj9+a8IomuJoQzf3sMq4T",
       crossorigin: "anonymous",
     },
   ],
@@ -262,8 +262,8 @@ const config: Config = {
             },
           ],
         },
-       // { to: "/blog", label: "Blog", position: "right" },
-       { to: "/pdf/CT2026.pdf", label: "Calendário", position: "right", target: '_blank'},
+        // { to: "/blog", label: "Blog", position: "right" },
+        { to: "/pdf/CT2026.pdf", label: "Calendário", position: "right", target: '_blank' },
         {
           href: "https://github.com/ruseleredu/sd-docs",
           label: "GitHub",
