@@ -17,7 +17,7 @@
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
+[data-theme="dark"] {
   --ifm-color-primary: #ffffff;
   --ifm-color-primary-dark: #e6e6e6;
   --ifm-color-primary-darker: #d9d9d9;
@@ -26,4 +26,9 @@
   --ifm-color-primary-lighter: #ffffff;
   --ifm-color-primary-lightest: #ffffff;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Removes the external link icon specifically in the footer */
+.footer__link-item svg {
+  display: none;
 }
