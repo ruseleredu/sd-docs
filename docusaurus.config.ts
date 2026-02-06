@@ -17,7 +17,8 @@ const formatter = new Intl.DateTimeFormat("pt-BR", {
   hourCycle: "h23", // Use 24-hour format
 });
 const utc3Time = formatter.format(new Date());
-const COPYRIGHT_STRING = `Copyright © ${new Date().getFullYear()} sd-docs, Inc. Built with Docusaurus at ${utc3Time} UTC-3.`;
+//const COPYRIGHT_STRING = `Copyright © ${new Date().getFullYear()} sd-docs, Inc. Built with Docusaurus at ${utc3Time} UTC-3.`;
+const COPYRIGHT_STRING = `Copyright © ${new Date().getFullYear()} sd-docs, Inc. Built with <a href="https://docusaurus.io/" style="color: #ffffff; font-weight: bold;" target="_blank" rel="noopener noreferrer">Docusaurus</a> at ${utc3Time} UTC-3.`;
 
 // 1. Import the labData array
 // https://gemini.google.com/share/c52111cbf825
@@ -399,6 +400,39 @@ const config: Config = {
             {
               label: "WinGet",
               href: "https://winget.run/",
+            },
+          ],
+        },
+        {
+          title: "Doku Sites",
+          items: [
+            {
+              label: "Main Site",
+              href: "https://adrianoruseler.github.io/site/",
+            },
+            {
+              label: "STM32 Docs",
+              href: "https://ruseleredu.github.io/stm32doc/",
+            },
+            {
+              label: "Sistemas Digitais",
+              href: "https://ruseleredu.github.io/sd-docs/",
+            },
+            {
+              label: "Analógica",
+              href: "https://ruseleredu.github.io/ea-docs/",
+            },
+            {
+              label: "LabSEC",
+              href: "https://ruseleredu.github.io/labsec/",
+            },
+            {
+              label: "Moodle Docs",
+              href: "https://adrianoruseler.github.io/moodle-docs/",
+            },
+            {
+              label: "My Docs",
+              href: "https://adrianoruseler.github.io/my-docs/",
             },
           ],
         },
