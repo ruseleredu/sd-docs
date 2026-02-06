@@ -12,39 +12,41 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-   title: (
-      <Link to="/ead/intro">
-        Easy to Use with Link
+    title: (
+      <Link to="/utfpr/ELT72B/intro">
+        Sistemas Digitais
       </Link>
     ),
-    Svg: require('@site/static/img/binary-code-algorithm-svgrepo-com.svg').default,
+    Svg: require('@site/static/img/office-svgrepo-com.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-         {" "}
-        <a href="https://www.arduino.cc/" target="_blank">
-          Arduino
-        </a>{" "} used to get your website up and running quickly.
+        Possibilitar ao aluno analisar, sintetizar e desenvolver circuitos digitais combinacionais e sequenciais.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: (
+      <Link to="/lab/intro">
+        Laboratório de Sistemas Digitais
+      </Link>
+    ),
     Svg: require('@site/static/img/lab-medical-test-svgrepo-com.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Descrição do curso de laboratório de sistemas digitais.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: (
+      <Link to="/ead/intro">
+        Ensino a Distância
+      </Link>
+    ),
     Svg: require('@site/static/img/online-seminar-svgrepo-com.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your <Link to="/docs/intro">docs</Link> into the <code>docs</code> directory.
+        Descrição do curso de ensino a distância.
       </>
     ),
   },
