@@ -84,5 +84,9 @@ npm i baseline-browser-mapping@latest -D
 ```
 
 ```bash
+npm update
+```
+
+```bash
 npm audit fix
 ```
