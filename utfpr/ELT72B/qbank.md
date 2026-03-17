@@ -6,12 +6,14 @@ description: Banco de questões da disciplina ELT82E.
 slug: /ELT82E/qbank
 ---
 
-## Sistames Digitais
+## Sistemas Digitais
 
-### Banco de questões
+### Bancos de questões
 
+- https://github.com/AdrianoRuseler/ELT72B
 - https://github.com/AdrianoRuseler/ELT82E-LAB
 - https://github.com/AdrianoRuseler/AOS-QUIZES
 - https://github.com/AdrianoRuseler/quiz2matlab
+- https://github.com/AdrianoRuseler/kroki-matlab
 - https://github.com/AdrianoRuseler/python-scripts-for-moodle-questions
 - https://github.com/AdrianoRuseler/psim_pytool

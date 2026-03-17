@@ -88,3 +88,13 @@ import QuizTable from '@site/src/components/QuizTable';
 [Calendário Acadêmico de 2026](/pdf/CT2026.pdf)
 
 ![Calendário Acadêmico de 2026](/img/CT2026.png)
+
+## Bancos de questões
+
+- https://github.com/AdrianoRuseler/ELT72B
+- https://github.com/AdrianoRuseler/ELT82E-LAB
+- https://github.com/AdrianoRuseler/AOS-QUIZES
+- https://github.com/AdrianoRuseler/quiz2matlab
+- https://github.com/AdrianoRuseler/kroki-matlab
+- https://github.com/AdrianoRuseler/python-scripts-for-moodle-questions
+- https://github.com/AdrianoRuseler/psim_pytool
