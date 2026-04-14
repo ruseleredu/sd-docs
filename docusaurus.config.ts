@@ -55,10 +55,10 @@ const config: Config = {
   // Include the KaTeX CSS in your config under stylesheets:
   stylesheets: [
     {
-      href: "https://cdn.jsdelivr.net/npm/katex@0.16.28/dist/katex.min.css",
+      href: "https://cdn.jsdelivr.net/npm/katex@0.16.45/dist/katex.min.css",
       type: "text/css",
       integrity:
-        "sha384-Wsr4Nh3yrvMf2KCebJchRJoVo1gTU6kcP05uRSh5NV3sj9+a8IomuJoQzf3sMq4T",
+        "sha384-4oq/auzzmx0i9ZQW815S9u/s+w/VYRSz/0auctaq99qhFt2YKlaMiLdXBaODJHxZ",
       crossorigin: "anonymous",
     },
   ],
