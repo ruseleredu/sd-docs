@@ -107,7 +107,7 @@ const config: Config = {
         id: "lab", // Unique ID for this docs instance
         path: "lab-docs", // Path to your LAB docs folder
         routeBasePath: "lab", // Base URL for these docs (e.g., yoursite.com/lab/...)
-        sidebarPath: require.resolve("./labsidebars.js"), // Separate sidebar for LAB docs
+        sidebarPath: require.resolve("./labsidebars.ts"), // Separate sidebar for LAB docs
         // ... other options specific to your LAB docs
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
@@ -120,7 +120,7 @@ const config: Config = {
         id: "ead", // Unique ID for this docs instance
         path: "ead-docs", // Path to your EaD docs folder
         routeBasePath: "ead", // Base URL for these docs (e.g., yoursite.com/ead/...)
-        sidebarPath: require.resolve("./eadsidebars.js"), // Separate sidebar for EaD docs
+        sidebarPath: require.resolve("./eadsidebars.ts"), // Separate sidebar for EaD docs
         // ... other options specific to your EaD docs
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
@@ -133,7 +133,7 @@ const config: Config = {
         id: "utfpr", // Unique ID for this docs instance
         path: "utfpr", // Path to your API docs folder
         routeBasePath: "utfpr", // Base URL for these docs (e.g., yoursite.com/api/...)
-        sidebarPath: require.resolve("./sidebarsutfpr.js"), // Separate sidebar for API docs
+        sidebarPath: require.resolve("./sidebarsutfpr.ts"), // Separate sidebar for API docs
         // 👇 Add this line for the last update time
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
@@ -147,7 +147,7 @@ const config: Config = {
         id: "pjts", // Unique ID for this docs instance
         path: "pjts-docs", // Path to your API docs folder
         routeBasePath: "pjts", // Base URL for these docs (e.g., yoursite.com/api/...)
-        sidebarPath: require.resolve("./sidebarspjts.js"), // Separate sidebar for API docs
+        sidebarPath: require.resolve("./sidebarspjts.ts"), // Separate sidebar for API docs
         // 👇 Add this line for the last update time
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
