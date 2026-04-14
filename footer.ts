@@ -181,11 +181,7 @@ const footer: ThemeConfig["footer"] = {
                 },
                 {
                     label: "Moodle Docs",
-                    href: "https://adrianoruseler.github.io/moodle-docs/",
-                },
-                {
-                    label: "My Docs",
-                    href: "https://adrianoruseler.github.io/my-docs/",
+                    href: "https://ruseleredu.github.io/moodle-docs/",
                 },
             ],
         },
