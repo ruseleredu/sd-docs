@@ -90,3 +90,9 @@ npm update
 ```bash
 npm audit fix
 ```
+
+Run Automation Script for katex
+
+```bash
+node scripts/download-katex.js
+```

@@ -53,6 +53,7 @@ const config: Config = {
   themes: ["@docusaurus/theme-mermaid"],
 
   // Include the KaTeX CSS in your config under stylesheets:
+  /*
   stylesheets: [
     {
       href: "https://cdn.jsdelivr.net/npm/katex@0.16.45/dist/katex.min.css",
@@ -60,6 +61,13 @@ const config: Config = {
       integrity:
         "sha384-4oq/auzzmx0i9ZQW815S9u/s+w/VYRSz/0auctaq99qhFt2YKlaMiLdXBaODJHxZ",
       crossorigin: "anonymous",
+    },
+  ],
+*/
+  stylesheets: [
+    {
+      href: '/katex/katex.min.css', // No need for integrity/crossorigin when local
+      type: "text/css",
     },
   ],
 
