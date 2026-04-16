@@ -131,6 +131,10 @@ const footer: ThemeConfig["footer"] = {
             title: "Ferramentas",
             items: [
                 {
+                    label: "K-Map Solver",
+                    href: "https://karnaughmapsolver.com/",
+                },
+                {
                     label: "Karnaugh Map Solver",
                     href: "https://wredan.github.io/Karnaugh-Map-Solver/",
                 },
