@@ -96,3 +96,14 @@ Run Automation Script for katex
 ```bash
 node scripts/download-katex.js
 ```
+
+
+Run Automation Script for Tinkercad
+
+```bash
+node scripts/download-circuits.js
+```
+
+```bash
+node scripts/pipeline.js
+```
