@@ -92,9 +92,6 @@ em bom estado de funcionamento.
 
 Ao colocar esta entrada em nível baixo observa-se ___
 
-<table><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr></table>
-
-<table><tr><td></td><td></td></tr><tr><td>167</td><td></td></tr></table>
 
 ---
 - https://ocr.z.ai/
