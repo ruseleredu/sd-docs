@@ -1,3 +1,7 @@
+---
+title: Exp3.4 - Tempo de Propagação
+description: Conhecer as tensões características de entrada e saída das portas lógicas TTL e CMOS.
+---
 
 ## Objetivos
 
@@ -156,4 +160,5 @@ $$
 t _ {P _ {\mathrm {L H}} (\mathrm {u m a p o r t a})} = \frac {t _ {P _ {\mathrm {L H}}}}{2} = \underline {{\quad}} = \underline {{\quad}}
 $$
 
+---
 - https://ocr.z.ai/

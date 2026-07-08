@@ -1,0 +1,101 @@
+---
+title: Exp5.2 - Decodificador BCD-7 Segmentos
+description: Verificar o funcionamento de um CI decodificador em conjunto com um display de 7 segmentos.
+---
+
+## Objetivos
+
+- Verificar o funcionamento de um CI decodificador em conjunto com um display de 7 segmentos.
+
+<table border="1"><tr><td>Preparação</td></tr></table>
+
+## Conceitos
+
+## 1) Display
+
+Para a visualização dos algarismos decimais é comum utilizar um mostrador onde a combinação de 7 segmentos de retas, luminosos ou não, são capazes de formar os 10 algarismos do sistema decimal. Este dispositivo é conhecido como display de 7 segmentos. Existem displays de 7 segmentos eletromecânicos, outros construídos com lâmpadas incandescentes, displays que utilizam LEDs, cristal líquido, etc. Um tipo muito utilizado é o construído com LEDs.
+
+Os LEDs que constituem o display são alocados no componente numa disposição padrão recebendo cada um deles uma letra minúscula para identificação. As letras são a, b, c, d, e, f e g. Os displays trazem, ainda, um ponto identificado pela letra "p".
+
+Quanto ao tipo de ligação interna, os displays podem ser classificados como anodo comum e catodo comum. No display anodo comum, todos os anodos dos LEDs que formam o display estão ligados entre si formando um único terminal - o anodo comum. No display catodo comum, todos os catodos dos LEDs que que formam o display estão ligados entre si formando um único terminal - o catodo comum.
+
+<div style={{ textAlign: 'center' }}><img src='https://maas-watermark-prod-new.cn-wlcb.ufileos.com/ocr%2Fcrop%2F20260709022719402076a4bd994e82%2Fcrop_1_1783535255644.png?UCloudPublicKey=TOKEN_6df395df-5d8c-4f69-90f8-a4fe46088958&Signature=gnNgqc47BvnZXh2EeUwENjuaBrU%3D&Expires=1784140055' alt='OCR图片'/></div>
+
+Os LEDs que compõem o display suportam no máximo 2V/20mA, portanto não podem ser ligados diretamente nas saídas das porta lógicas. É necessário utilizar um resistor em série para proteger os LEDs da corrente excessiva.
+
+## 2) Decodificador 7447
+
+A figura seguinte mostra os pinos do CI 7447 - decodificador/driver BCD para 7 segmentos, ativo em nível baixo, saída - coletor aberto.
+
+<div style={{ textAlign: 'center' }}><img src='https://maas-watermark-prod-new.cn-wlcb.ufileos.com/ocr%2Fcrop%2F20260709022719402076a4bd994e82%2Fcrop_1_1783535255698.png?UCloudPublicKey=TOKEN_6df395df-5d8c-4f69-90f8-a4fe46088958&Signature=K30LuwZNY1qvUqTR4SKhEf8OIoM%3D&Expires=1784140055' alt='OCR图片'/></div>
+
+<div align="center">
+
+3) Tabela de funcionamento do CI 7447
+
+</div>
+
+<table border="1"><tr><td rowspan="2">Decimal ou Função</td><td colspan="6">Entradas</td><td rowspan="2">BI/RBO</td><td colspan="6">Saídas</td></tr><tr><td>LT</td><td>RBI</td><td>D</td><td>C</td><td>B</td><td>A</td><td>a</td><td>b</td><td>c</td><td>d</td><td>e</td><td>f</td><td>g</td></tr><tr><td>0</td><td>H</td><td>H</td><td>L</td><td>L</td><td>L</td><td>L</td><td>H</td><td>L</td><td>L</td><td>L</td><td>L</td><td>L</td><td>L</td><td>H</td></tr><tr><td>1</td><td>H</td><td>X</td><td>L</td><td>L</td><td>L</td><td>H</td><td>H</td><td>H</td><td>L</td><td>L</td><td>H</td><td>H</td><td>H</td><td>H</td></tr><tr><td>2</td><td>H</td><td>X</td><td>L</td><td>L</td><td>H</td><td>L</td><td>H</td><td>L</td><td>L</td><td>H</td><td>L</td><td>L</td><td>H</td><td>L</td></tr><tr><td>3</td><td>H</td><td>X</td><td>L</td><td>L</td><td>H</td><td>H</td><td>H</td><td>L</td><td>L</td><td>L</td><td>L</td><td>H</td><td>H</td><td>L</td></tr><tr><td>4</td><td>H</td><td>X</td><td>L</td><td>H</td><td>L</td><td>L</td><td>H</td><td>H</td><td>L</td><td>L</td><td>H</td><td>H</td><td>L</td><td>L</td></tr><tr><td>5</td><td>H</td><td>X</td><td>L</td><td>H</td><td>L</td><td>H</td><td>H</td><td>L</td><td>H</td><td>L</td><td>L</td><td>H</td><td>L</td><td>L</td></tr><tr><td>6</td><td>H</td><td>X</td><td>L</td><td>H</td><td>H</td><td>L</td><td>H</td><td>H</td><td>H</td><td>L</td><td>L</td><td>L</td><td>L</td><td>L</td></tr><tr><td>7</td><td>H</td><td>X</td><td>L</td><td>H</td><td>H</td><td>H</td><td>H</td><td>L</td><td>L</td><td>L</td><td>H</td><td>H</td><td>H</td><td>H</td></tr><tr><td>8</td><td>H</td><td>X</td><td>H</td><td>L</td><td>L</td><td>L</td><td>H</td><td>L</td><td>L</td><td>L</td><td>L</td><td>L</td><td>L</td><td>L</td></tr><tr><td>9</td><td>H</td><td>X</td><td>H</td><td>L</td><td>L</td><td>H</td><td>H</td><td>L</td><td>L</td><td>L</td><td>H</td><td>H</td><td>L</td><td>L</td></tr><tr><td>10</td><td>H</td><td>X</td><td>H</td><td>L</td><td>H</td><td>L</td><td>H</td><td>H</td><td>H</td><td>H</td><td>L</td><td>L</td><td>H</td><td>L</td></tr><tr><td>11</td><td>H</td><td>X</td><td>H</td><td>L</td><td>H</td><td>H</td><td>H</td><td>H</td><td>H</td><td>L</td><td>L</td><td>H</td><td>H</td><td>L</td></tr><tr><td>12</td><td>H</td><td>X</td><td>H</td><td>H</td><td>L</td><td>L</td><td>H</td><td>H</td><td>L</td><td>H</td><td>H</td><td>H</td><td>L</td><td>L</td></tr><tr><td>13</td><td>H</td><td>X</td><td>H</td><td>H</td><td>L</td><td>H</td><td>H</td><td>L</td><td>H</td><td>H</td><td>L</td><td>H</td><td>L</td><td>L</td></tr><tr><td>14</td><td>H</td><td>X</td><td>H</td><td>H</td><td>H</td><td>L</td><td>H</td><td>H</td><td>H</td><td>H</td><td>L</td><td>L</td><td>L</td><td>L</td></tr><tr><td>15</td><td>H</td><td>X</td><td>H</td></tr></table>
+
+LT-lamp-test BI-blanking imput RBO-ripple-blanking output RBI-ripple-blanking input
+
+## Metodologia
+
+M1- Será implementado um circuito acionador decodificador para display de 7 segmentos usando o CI 7447 e um display anodo comum do tipo SD 567.
+
+<table border="1"><tr><td>Quantidade</td><td>Descrição</td></tr><tr><td>1</td><td>fonte de tensão de 5V</td></tr><tr><td>1</td><td>matriz de contatos</td></tr><tr><td>1</td><td>multimetro</td></tr><tr><td>1</td><td>CI 7447 94LS47 0/00 1,20</td></tr><tr><td>1</td><td>Display SD 567(anodo comum) 0/00 1,90</td></tr><tr><td>7</td><td>resistores de 330Ω</td></tr><tr><td>2</td><td>cabos banana-banana</td></tr><tr><td>-</td><td>fios rígidos 0,51 mm∅</td></tr></table>
+
+## Praticando
+
+<div align="center">
+
+P1- Implementar o circuito abaixo.
+
+</div>
+
+<div style={{ textAlign: 'center' }}><img src='https://maas-watermark-prod-new.cn-wlcb.ufileos.com/ocr%2Fcrop%2F20260709022719402076a4bd994e82%2Fcrop_1_1783535255712.png?UCloudPublicKey=TOKEN_6df395df-5d8c-4f69-90f8-a4fe46088958&Signature=ED0X1RJQubbL9Ncdk1RAa86diOs%3D&Expires=1784140055' alt='OCR图片'/></div>
+
+P2- Ligar a fonte de alimentação e aplicar níveis lógicos às entradas A, B, Ce D do circuito, conforme as indicações das linhas da tabela verdade. Para cada situação de entrada verificar o algarismo formado no display. (RI-I)
+
+P3- Colocar por um instante a entrada Lamp Test em nível baixo, ligando-se o pino 3 ao terra do circuito. (RI-II)
+
+P4- Verificar o que acontece ao passar a entrada $ \overline{\mathrm{BI}} / \overline{\mathrm{RBO}} $ do Vcc para o terra. (RI-III)
+
+
+Q1- Relacionar as diferenças de funcionamento entre os CIs 4511 e 7447.
+
+Q2- Explicar o que acontece quando ocorre nas entradas A, B, C e D do CI 7447 um número binário superior a 9 decimal.
+
+Q3- Pesquisar uma possivel aplicação para a entrada $ \overline{\mathrm{BI}} / \overline{\mathrm{RBO}} $ .
+
+<table border="1"><tr><td colspan="3">Instituição:</td></tr><tr><td colspan="3">Curso: Discipl.: Série/Turma:</td></tr><tr><td colspan="3">Prof.: Data: Conceito:</td></tr><tr><td colspan="2">Nome</td><td>Nº</td></tr><tr><td colspan="2"></td><td></td></tr><tr><td colspan="2"></td><td></td></tr><tr><td colspan="2"></td><td></td></tr><tr><td colspan="2"></td><td></td></tr></table>
+
+Relatório Imediato da Experiência 5.2
+
+Decodificador BCD-7 Segmentos
+
+## I- Tabela de resultados e desenho esquemático da montagem
+
+A tabela abaixo mostra na coluna "Saída" os algarismos decimais obtidos com a variação das entradas do circuito decodificador, desde 0000 até 1111.
+
+<table border="1"><tr><td rowspan="2">N°</td><td colspan="5">Entradas</td><td>Saída</td></tr><tr><td>D</td><td>C</td><td>B</td><td>A</td><td>BI/RBO</td><td>Display</td></tr><tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td></td></tr><tr><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td></td></tr><tr><td>2</td><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td><td></td></tr><tr><td>3</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td></td></tr><tr><td>4</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td></td></tr><tr><td>5</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td></td></tr><tr><td>6</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td></td></tr><tr><td>7</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td></td></tr><tr><td>8</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td></td></tr><tr><td>9</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td></td></tr><tr><td>10</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td></td></tr><tr><td>11</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td></td></tr><tr><td>12</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td></td></tr><tr><td>13</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td></td></tr><tr><td>14</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td></td></tr><tr><td>15</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td></td></tr></table>
+
+## II- Teste da entrada LT ( Lamp Test)
+
+Ao colocar o pino 3 em nível baixo observa-se que ___
+
+desta forma é possível saber quando ___ encontra-se
+
+em bom estado de funcionamento.
+
+## III- Teste da entrada BI / RBO
+
+Ao colocar esta entrada em nível baixo observa-se ___
+
+<table><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr></table>
+
+<table><tr><td></td><td></td></tr><tr><td>167</td><td></td></tr></table>
+
+---
+- https://ocr.z.ai/
+  
