@@ -3,7 +3,11 @@ title: Exp7.3 - CI Flip-Flop JK Master-Slave
 description: Verificar o funcionamento de circuitos divisores de frequência, que utilizam flip-flop JK master-slave.
 ---
 
-## Objetivos
+# Experimento 7.3 - CI Flip-Flop JK Master-Slave
+
+:::tip[Objetivos]
+:::
+
 
 - Conhecer e ensaiar o CI 7476 da familia lógica TTL.
 
@@ -13,7 +17,9 @@ description: Verificar o funcionamento de circuitos divisores de frequência, qu
 
 - Verificar o funcionamento de circuitos divisores de frequência, que utilizam flip-flop JK master-slave.
 
-## Preparação
+
+:::info[Preparação]
+:::
 
 ## Conceitos
 
