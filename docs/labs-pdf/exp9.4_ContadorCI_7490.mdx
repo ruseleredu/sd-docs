@@ -13,21 +13,99 @@ Preparação
 
 A figura a seguir mostra o diagrama elétrico e a pinagem do CI 7490.
 
-<div style={{ textAlign: 'center' }}>![OCR图片](/img/imported/bb7ef2e3401c7a553e09377a2b323abb6f3a8900.png)</div>
+<div style={{ textAlign: "center" }}>
+  ![OCR图片](/img/imported/bb7ef2e3401c7a553e09377a2b323abb6f3a8900.png)
+</div>
 
-Este circuito possui internamente um divisor por 2 (contador módulo 2) e um divisor por 5 (contador módulo 5). Seus flip-flops são sensíveis à borda de descida do pulso de clock . Os dois circuitos divisores podem ser utilizados independentemente, mas, o controle de RESET é comum a ambos. Se as duas entradas $ R_{0} $ são colocadas em nível lógico "1", todas as saídas vão para "0" e, se as entradas $ R_{9} $ são colocadas em nível lógico "1", a saída fica igual a 1001.
+Este circuito possui internamente um divisor por 2 (contador módulo 2) e um divisor por 5 (contador módulo 5). Seus flip-flops são sensíveis à borda de descida do pulso de clock . Os dois circuitos divisores podem ser utilizados independentemente, mas, o controle de RESET é comum a ambos. Se as duas entradas $ R*{0} $ são colocadas em nível lógico "1", todas as saídas vão para "0" e, se as entradas $ R*{9} $ são colocadas em nível lógico "1", a saída fica igual a 1001.
 
-<div style={{ textAlign: 'center' }}>![OCR图片](/img/imported/54eae3641340613ab66f7739c48559c185d711ef.png)</div>
+<div style={{ textAlign: "center" }}>
+  ![OCR图片](/img/imported/54eae3641340613ab66f7739c48559c185d711ef.png)
+</div>
 
-<table border="1"><tr><td>CK</td><td>R01</td><td>R02</td><td>R91</td><td>R92</td><td>QD</td><td>QC</td><td>QB</td><td>QA</td></tr><tr><td></td><td>X</td><td>0</td><td>X</td><td>0</td><td colspan="4">Contagem</td></tr><tr><td></td><td>0</td><td>X</td><td>0</td><td>X</td><td colspan="4">Contagem</td></tr><tr><td>X</td><td>1</td><td>1</td><td>X</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>X</td><td>1</td><td>1</td><td>0</td><td>X</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>X</td><td>X</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td></tr><tr><td>X</td><td>0</td><td>X</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td></tr></table>
+<table border="1">
+  <tr>
+    <td>CK</td>
+    <td>R01</td>
+    <td>R02</td>
+    <td>R91</td>
+    <td>R92</td>
+    <td>QD</td>
+    <td>QC</td>
+    <td>QB</td>
+    <td>QA</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>X</td>
+    <td>0</td>
+    <td>X</td>
+    <td>0</td>
+    <td colspan="4">Contagem</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>0</td>
+    <td>X</td>
+    <td>0</td>
+    <td>X</td>
+    <td colspan="4">Contagem</td>
+  </tr>
+  <tr>
+    <td>X</td>
+    <td>1</td>
+    <td>1</td>
+    <td>X</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>X</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>X</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>X</td>
+    <td>X</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>X</td>
+    <td>0</td>
+    <td>X</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+  </tr>
+</table>
 
 Este CI pode operar em três modos:
 
 ## a) Modo 1: Contador de década
 
-Neste caso, a entrada CKB deve ser ligada externamente à saída $ Q_{A} $ e os pulsos de clock devem ser aplicados à entrada CKA.
+Neste caso, a entrada CKB deve ser ligada externamente à saída $ Q\_{A} $ e os pulsos de clock devem ser aplicados à entrada CKA.
 
-<div style={{ textAlign: 'center' }}>![OCR图片](/img/imported/4e5faa22a3bc3a3e53f91c4be3dd624048b56859.png)</div>
+<div style={{ textAlign: "center" }}>
+  ![OCR图片](/img/imported/4e5faa22a3bc3a3e53f91c4be3dd624048b56859.png)
+</div>
 
 <div align="center">
 
@@ -35,7 +113,74 @@ Modo 1
 
 </div>
 
-<table border="1"><tr><td>$Q_{D}$</td><td>$Q_{C}$</td><td>$Q_{B}$</td><td>$Q_{A}$</td></tr><tr><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>0</td><td>0</td><td>0</td><td>1</td></tr><tr><td>0</td><td>0</td><td>1</td><td>0</td></tr><tr><td>0</td><td>0</td><td>1</td><td>1</td></tr><tr><td>0</td><td>1</td><td>0</td><td>0</td></tr><tr><td>0</td><td>1</td><td>0</td><td>1</td></tr><tr><td>0</td><td>1</td><td>1</td><td>0</td></tr><tr><td>0</td><td>1</td><td>1</td><td>1</td></tr><tr><td>1</td><td>0</td><td>0</td><td>0</td></tr><tr><td>1</td><td>0</td><td>0</td><td>1</td></tr></table>
+<table border="1">
+  <tr>
+    <td>$Q_{D}$</td>
+    <td>$Q_{C}$</td>
+    <td>$Q_{B}$</td>
+    <td>$Q_{A}$</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+  </tr>
+</table>
 
 <div align="center">
 
@@ -43,9 +188,11 @@ b) Modo 2: Divisor simétrico por 10
 
 </div>
 
-Neste caso, deve-se conectar a saída $ Q_{D} $ externamente à entrada CKA e os pulsos de clock devem ser aplicados na entrada CKB. A saída $ Q_{A} $ fornecerá uma onda quadrada simétrica com 1/10 da frequência do sinal CKB.
+Neste caso, deve-se conectar a saída $ Q*{D} $ externamente à entrada CKA e os pulsos de clock devem ser aplicados na entrada CKB. A saída $ Q*{A} $ fornecerá uma onda quadrada simétrica com 1/10 da frequência do sinal CKB.
 
-<div style={{ textAlign: 'center' }}>![OCR图片](/img/imported/1d1ae8ee1f6bafa7c575127bc1185a79a6a9219f.png)</div>
+<div style={{ textAlign: "center" }}>
+  ![OCR图片](/img/imported/1d1ae8ee1f6bafa7c575127bc1185a79a6a9219f.png)
+</div>
 
 <div align="center">
 
@@ -53,15 +200,119 @@ Modo 2
 
 </div>
 
-<table border="1"><tr><td>$Q_{D}$</td><td>$Q_{C}$</td><td>$Q_{B}$</td><td>$Q_{A}$</td></tr><tr><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>0</td><td>0</td><td>1</td><td>0</td></tr><tr><td>0</td><td>1</td><td>0</td><td>0</td></tr><tr><td>0</td><td>1</td><td>1</td><td>0</td></tr><tr><td>1</td><td>0</td><td>0</td><td>0</td></tr><tr><td>0</td><td>0</td><td>0</td><td>1</td></tr><tr><td>0</td><td>0</td><td>1</td><td>1</td></tr><tr><td>0</td><td>1</td><td>0</td><td>1</td></tr><tr><td>0</td><td>1</td><td>1</td><td>1</td></tr><tr><td>1</td><td>0</td><td>0</td><td>1</td></tr></table>
+<table border="1">
+  <tr>
+    <td>$Q_{D}$</td>
+    <td>$Q_{C}$</td>
+    <td>$Q_{B}$</td>
+    <td>$Q_{A}$</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+  </tr>
+</table>
 
 ## c) Modo 3: Divisor por 2 e/ou divisor por 5
 
-Neste caso, não há necessidade de ligações externas. Para o divisor por 2 utiliza-se CKA como entrada e $ Q_{A} $ como saída. Para o divisor por 5 utiliza-se CKB como entrada $ e Q_{D} $ como saída.
+Neste caso, não há necessidade de ligações externas. Para o divisor por 2 utiliza-se CKA como entrada e $ Q*{A} $ como saída. Para o divisor por 5 utiliza-se CKB como entrada $ e Q*{D} $ como saída.
 
-<div style={{ textAlign: 'center' }}>![OCR图片](/img/imported/6792a9939e7d97f4f10bf6f345a63d6a46443200.png)</div>
+<div style={{ textAlign: "center" }}>
+  ![OCR图片](/img/imported/6792a9939e7d97f4f10bf6f345a63d6a46443200.png)
+</div>
 
-<table border="1"><tr><td>$Q_{D}$</td><td>$Q_{C}$</td><td>$Q_{B}$</td><td>$Q_{A}$</td></tr><tr><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>0</td><td>0</td><td>0</td><td>1</td></tr><tr><td>0</td><td>1</td><td>1</td><td rowspan="3"></td></tr><tr><td>0</td><td>1</td><td>1</td></tr><tr><td>1</td><td>0</td><td>0</td></tr></table>
+<table border="1">
+  <tr>
+    <td>$Q_{D}$</td>
+    <td>$Q_{C}$</td>
+    <td>$Q_{B}$</td>
+    <td>$Q_{A}$</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td rowspan="3"></td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+  </tr>
+</table>
 
 <div align="center">
 
@@ -136,9 +387,11 @@ Exemplo de utilização - Contador Crescente Módulo 6 (0 a 5)
   </tr>
 </table>
 
-Após o $ 6^{\circ} $ pulso de clock, este contador deve voltar ao estado inicial 0. Observando-se a tabela do contador de décadas, percebe-se que é possivel utilizar as saídas $ Q_{C}eQ_{B} $ para fornecer o RESET, desta forma o contador irá reiniciar o seu ciclo de contagem.
+Após o $ 6^{\circ} $ pulso de clock, este contador deve voltar ao estado inicial 0. Observando-se a tabela do contador de décadas, percebe-se que é possivel utilizar as saídas $ Q*{C}eQ*{B} $ para fornecer o RESET, desta forma o contador irá reiniciar o seu ciclo de contagem.
 
-<div style={{ textAlign: 'center' }}>![OCR图片](/img/imported/b70fb9cda69735a8d03b2c751f18aa58557350a2.png)</div>
+<div style={{ textAlign: "center" }}>
+  ![OCR图片](/img/imported/b70fb9cda69735a8d03b2c751f18aa58557350a2.png)
+</div>
 
 <div align="center">
 
@@ -156,22 +409,80 @@ M3- A verificação experimental de um contador de módulo 60 será realizada pe
 
 ## Relação de Material
 
-<table border="1"><tr><td>Quantidade</td><td>Descrição</td></tr><tr><td>1</td><td>matriz de contatos</td></tr><tr><td>1</td><td>fonte de alimentação de +5V</td></tr><tr><td>1</td><td>CI 7400</td></tr><tr><td>2</td><td>CI 7490</td></tr><tr><td>2</td><td>CI 7447</td></tr><tr><td>2</td><td>display de 7-segmentos tipo anodo comum</td></tr><tr><td>2</td><td>resistores de 1kΩ</td></tr><tr><td>14</td><td>resistores de 330Ω</td></tr><tr><td>1</td><td>chave H-H</td></tr><tr><td>1</td><td>gerador de onda quadrada com saída TTL</td></tr><tr><td>1</td><td>Osciloscópio</td></tr><tr><td>-</td><td>fios rígidos 0,51 mm∅</td></tr></table>
+<table border="1">
+  <tr>
+    <td>Quantidade</td>
+    <td>Descrição</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>matriz de contatos</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>fonte de alimentação de +5V</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>CI 7400</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>CI 7490</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>CI 7447</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>display de 7-segmentos tipo anodo comum</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>resistores de 1kΩ</td>
+  </tr>
+  <tr>
+    <td>14</td>
+    <td>resistores de 330Ω</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>chave H-H</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>gerador de onda quadrada com saída TTL</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Osciloscópio</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td>fios rígidos 0,51 mm∅</td>
+  </tr>
+</table>
 
 P1- Montar um contador de década conforme diagrama dado a seguir. Verificar a sequência de contagem através de um display (RI-I)
 
-<div style={{ textAlign: 'center' }}>![OCR图片](/img/imported/0dc5397695da558206cafaf627f6a66ebd2a92d4.png)</div>
+<div style={{ textAlign: "center" }}>
+  ![OCR图片](/img/imported/0dc5397695da558206cafaf627f6a66ebd2a92d4.png)
+</div>
 
 Obs: Para fornecer pulsos de clock adequados, utilizar o circuito eliminador de ruído.
 
-P2- Montar um circuito divisor de frequência por 10 simétrico, conforme diagrama dado a seguir. Utilizando o gerador de onda quadrada com saída TTL, ajustar a frequência em 10kHz e injetar na entrada CKB. Acompanhar com o osciloscópio o sinal nas saídas $ Q_{A} $ e $ Q_{D} $ (RI-II)
+P2- Montar um circuito divisor de frequência por 10 simétrico, conforme diagrama dado a seguir. Utilizando o gerador de onda quadrada com saída TTL, ajustar a frequência em 10kHz e injetar na entrada CKB. Acompanhar com o osciloscópio o sinal nas saídas $ Q*{A} $ e $ Q*{D} $ (RI-II)
 
-<div style={{ textAlign: 'center' }}>![OCR图片](/img/imported/d8e596bba4accacef719d711a5cafc6aa6e8d383.png)</div>
-
+<div style={{ textAlign: "center" }}>
+  ![OCR图片](/img/imported/d8e596bba4accacef719d711a5cafc6aa6e8d383.png)
+</div>
 
 P3- Montar um contador módulo 60 conforme diagrama de blocos dado a seguir. Acompanhar nos displays, a sequência de contagem, conforme se aplicam pulsos de clock ao circuito (RI-III).
 
-<div style={{ textAlign: 'center' }}>![OCR图片](/img/imported/009b7372f9f5684a146a4847540dcdcb9b258d7a.png)</div>
+<div style={{ textAlign: "center" }}>
+  ![OCR图片](/img/imported/009b7372f9f5684a146a4847540dcdcb9b258d7a.png)
+</div>
 
 Q1. Utilizando o CI 7490, elabore um circuito divisor de frequência por 6. Explique.
 
@@ -181,21 +492,100 @@ Q3. Projetar um contador módulo 24
 
 Q4. Pesquisar as características do CI 4029
 
-<table border="1"><tr><td colspan="2">Instituição:</td></tr><tr><td colspan="2">Curso: Discipl.: Série/Turma:</td></tr><tr><td colspan="2">Prof.: Data: Conceito:</td></tr><tr><td>Nome</td><td>Nº</td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr></table>
+<table border="1">
+  <tr>
+    <td colspan="2">Instituição:</td>
+  </tr>
+  <tr>
+    <td colspan="2">Curso: Discipl.: Série/Turma:</td>
+  </tr>
+  <tr>
+    <td colspan="2">Prof.: Data: Conceito:</td>
+  </tr>
+  <tr>
+    <td>Nome</td>
+    <td>Nº</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
 
 ## Relatório Imediato
 
 ## I - Contador de Décadas com 7490
 
-Para obter um contador de década com o 7490, conectou-se externamente a entrada CKB à saída $ Q_{A} $ e os pulsos de clock foram aplicados à entrada CKA.
+Para obter um contador de década com o 7490, conectou-se externamente a entrada CKB à saída $ Q\_{A} $ e os pulsos de clock foram aplicados à entrada CKA.
 
-<table border="1"><tr><td></td><td>Display</td></tr><tr><td>Estado inicial</td><td></td></tr><tr><td>Após 1° CK</td><td></td></tr><tr><td>Após 2° CK</td><td></td></tr><tr><td>Após 3° CK</td><td></td></tr><tr><td>Após 4° CK</td><td></td></tr><tr><td>Após 5° CK</td><td></td></tr><tr><td>Após 6° CK</td><td></td></tr><tr><td>Após 7° CK</td><td></td></tr><tr><td>Após 8° CK</td><td></td></tr><tr><td>Após 9° CK</td><td></td></tr><tr><td>Após 10° CK</td><td></td></tr></table>
+<table border="1">
+  <tr>
+    <td></td>
+    <td>Display</td>
+  </tr>
+  <tr>
+    <td>Estado inicial</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Após 1° CK</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Após 2° CK</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Após 3° CK</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Após 4° CK</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Após 5° CK</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Após 6° CK</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Após 7° CK</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Após 8° CK</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Após 9° CK</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Após 10° CK</td>
+    <td></td>
+  </tr>
+</table>
 
 Circuito lógico utilizado
 
 ## II - Divisor de Frequências por 10 Simétrico
 
-Neste caso, ligou-se a saída $ Q_{D} $ à entrada CKA e os pulsos de clock foram aplicados à entrada CKB.
+Neste caso, ligou-se a saída $ Q\_{D} $ à entrada CKA e os pulsos de clock foram aplicados à entrada CKB.
 
 <div align="center">
 
@@ -203,13 +593,13 @@ Circuito lógico utilizado
 
 </div>
 
-Em seguida mediu-se, através do osciloscópio, as frequencias nas saídas $ Q_{D} $ e $ Q_{A} $ :
+Em seguida mediu-se, através do osciloscópio, as frequencias nas saídas $ Q*{D} $ e $ Q*{A} $ :
 
 $$
 \begin{array}{l} F _ {Q _ {D}} = \mathrm {H z} \\ F _ {Q _ {A}} = \mathrm {H z} \\ \end{array}
 $$
 
-A saída $ Q_{A} $ forneceu uma onda quadrada simétrica de frequência igual a ___ da frequência do sinal aplicado em CKB.
+A saída $ Q\_{A} $ forneceu uma onda quadrada simétrica de frequência igual a \_\_\_ da frequência do sinal aplicado em CKB.
 
 ## III - Contador Módulo 60
 
@@ -217,6 +607,6 @@ A saída $ Q_{A} $ forneceu uma onda quadrada simétrica de frequência igual a 
 
 Montou-se, então, o seguinte circuito:
 
-Observou-se, então, que o contador realiza a contagem de ___ a ___.
+Observou-se, então, que o contador realiza a contagem de **_ a _**.
 
-Comentários: ___
+Comentários: \_\_\_
