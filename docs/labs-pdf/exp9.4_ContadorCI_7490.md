@@ -69,7 +69,72 @@ Exemplo de utilização - Contador Crescente Módulo 6 (0 a 5)
 
 </div>
 
-<table border="1"><tr><td></td><td>QD</td><td>QC</td><td>QB</td><td>QA</td><td>Estado</td></tr><tr><td>Estado inicial</td><td>0</td><td>0</td><td>0</td><td>0</td><td>$\textcircled{0}$</td></tr><tr><td>Após 1º CK</td><td>0</td><td>0</td><td>0</td><td>1</td><td>$\textcircled{1}$</td></tr><tr><td>Após 2º CK</td><td>0</td><td>0</td><td>1</td><td>0</td><td>$\textcircled{2}$</td></tr><tr><td>Após 3º CK</td><td>0</td><td>0</td><td>1</td><td>1</td><td>$\textcircled{3}$</td></tr><tr><td>Após 4º CK</td><td>0</td><td>1</td><td>0</td><td>0</td><td>$\textcircled{4}$</td></tr><tr><td>Após 5º CK</td><td>0</td><td>1</td><td>0</td><td>1</td><td>$\textcircled{5}$</td></tr><tr><td>Após 6º CK</td><td>0</td><td>1</td><td>1</td><td>0</td><td>Retornar para $\textcircled{0}$</td></tr></table>
+<table border="1">
+  <tr>
+    <td></td>
+    <td>QD</td>
+    <td>QC</td>
+    <td>QB</td>
+    <td>QA</td>
+    <td>Estado</td>
+  </tr>
+  <tr>
+    <td>Estado inicial</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>⓪</td>
+  </tr>
+  <tr>
+    <td>Após 1º CK</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>①</td>
+  </tr>
+  <tr>
+    <td>Após 2º CK</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td>②</td>
+  </tr>
+  <tr>
+    <td>Após 3º CK</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>③</td>
+  </tr>
+  <tr>
+    <td>Após 4º CK</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>④</td>
+  </tr>
+  <tr>
+    <td>Após 5º CK</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td>1</td>
+    <td>⑤</td>
+  </tr>
+  <tr>
+    <td>Após 6º CK</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>Retornar para ⓪</td>
+  </tr>
+</table>
 
 Após o $ 6^{\circ} $ pulso de clock, este contador deve voltar ao estado inicial 0. Observando-se a tabela do contador de décadas, percebe-se que é possivel utilizar as saídas $ Q_{C}eQ_{B} $ para fornecer o RESET, desta forma o contador irá reiniciar o seu ciclo de contagem.
 

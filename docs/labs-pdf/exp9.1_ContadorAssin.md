@@ -29,7 +29,18 @@ O ciclo de contagem se repete após o $ 8^{\circ} $ pulso de clock, pois todas a
 
 Pode-se, entao, construir a seguinte tabela:
 
-<table border="1"><tr><td></td><td>Q2</td><td>Q1</td><td>Q0</td><td>Estado</td></tr><tr><td>Estado inicial</td><td>0</td><td>0</td><td>0</td><td>$\textcircled{0}$</td></tr><tr><td>Após 1° CK</td><td>0</td><td>0</td><td>1</td><td>$\textcircled{1}$</td></tr><tr><td>Após 2° CK</td><td>0</td><td>1</td><td>0</td><td>$\textcircled{2}$</td></tr><tr><td>Após 3° CK</td><td>0</td><td>1</td><td>1</td><td>$\textcircled{3}$</td></tr><tr><td>Após 4° CK</td><td>1</td><td>0</td><td>0</td><td>$\textcircled{4}$</td></tr><tr><td>Após 5° CK</td><td>1</td><td>0</td><td>1</td><td>$\textcircled{5}$</td></tr><tr><td>Após 6° CK</td><td>1</td><td>1</td><td>0</td><td>$\textcircled{6}$</td></tr><tr><td>Após 7° CK</td><td>1</td><td>1</td><td>1</td><td>$\textcircled{7}$</td></tr><tr><td>Após 8° CK</td><td>0</td><td>0</td><td>0</td><td>$\textcircled{0}$</td></tr></table>
+<table border="1">
+<tr><td></td><td>Q2</td><td>Q1</td><td>Q0</td><td>Estado</td></tr>
+<tr><td>Estado inicial</td><td>0</td><td>0</td><td>0</td><td>⓪</td></tr>
+<tr><td>Após 1° CK</td><td>0</td><td>0</td><td>1</td><td>①</td></tr>
+<tr><td>Após 2° CK</td><td>0</td><td>1</td><td>0</td><td>②</td></tr>
+<tr><td>Após 3° CK</td><td>0</td><td>1</td><td>1</td><td>③</td></tr>
+<tr><td>Após 4° CK</td><td>1</td><td>0</td><td>0</td><td>④</td></tr>
+<tr><td>Após 5° CK</td><td>1</td><td>0</td><td>1</td><td>⑤</td></tr>
+<tr><td>Após 6° CK</td><td>1</td><td>1</td><td>0</td><td>⑥</td></tr>
+<tr><td>Após 7° CK</td><td>1</td><td>1</td><td>1</td><td>⑦</td></tr>
+<tr><td>Após 8° CK</td><td>0</td><td>0</td><td>0</td><td>⓪</td></tr>
+</table>
 
 Sequência de Saída do Contador Assíncrono Crescente Módulo 8
 
