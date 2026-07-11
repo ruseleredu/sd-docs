@@ -13,11 +13,11 @@ Preparação
 
 A figura a seguir mostra o diagrama elétrico e a pinagem do CI 7490.
 
-<div style={{ textAlign: 'center' }}><img src='https://maas-watermark-prod-new.cn-wlcb.ufileos.com/ocr%2Fcrop%2F202607090547140b1f5b5e2d134b9d%2Fcrop_1_1783547250813.png?UCloudPublicKey=TOKEN_6df395df-5d8c-4f69-90f8-a4fe46088958&Signature=gwmHkd8eo2MORgIxbaQ8JICdctQ%3D&Expires=1784152050' alt='OCR图片'/></div>
+<div style={{ textAlign: 'center' }}>![OCR图片](/img/imported/bb7ef2e3401c7a553e09377a2b323abb6f3a8900.png)</div>
 
 Este circuito possui internamente um divisor por 2 (contador módulo 2) e um divisor por 5 (contador módulo 5). Seus flip-flops são sensíveis à borda de descida do pulso de clock . Os dois circuitos divisores podem ser utilizados independentemente, mas, o controle de RESET é comum a ambos. Se as duas entradas $ R_{0} $ são colocadas em nível lógico "1", todas as saídas vão para "0" e, se as entradas $ R_{9} $ são colocadas em nível lógico "1", a saída fica igual a 1001.
 
-<div style={{ textAlign: 'center' }}><img src='https://maas-watermark-prod-new.cn-wlcb.ufileos.com/ocr%2Fcrop%2F202607090547140b1f5b5e2d134b9d%2Fcrop_2_1783547250875.png?UCloudPublicKey=TOKEN_6df395df-5d8c-4f69-90f8-a4fe46088958&Signature=baKdc%2B8yA%2F1C%2FqX06o7U2v%2By3Ts%3D&Expires=1784152050' alt='OCR图片'/></div>
+<div style={{ textAlign: 'center' }}>![OCR图片](/img/imported/54eae3641340613ab66f7739c48559c185d711ef.png)</div>
 
 <table border="1"><tr><td>CK</td><td>R01</td><td>R02</td><td>R91</td><td>R92</td><td>QD</td><td>QC</td><td>QB</td><td>QA</td></tr><tr><td></td><td>X</td><td>0</td><td>X</td><td>0</td><td colspan="4">Contagem</td></tr><tr><td></td><td>0</td><td>X</td><td>0</td><td>X</td><td colspan="4">Contagem</td></tr><tr><td>X</td><td>1</td><td>1</td><td>X</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>X</td><td>1</td><td>1</td><td>0</td><td>X</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>X</td><td>X</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td></tr><tr><td>X</td><td>0</td><td>X</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td></tr></table>
 
@@ -27,7 +27,7 @@ Este CI pode operar em três modos:
 
 Neste caso, a entrada CKB deve ser ligada externamente à saída $ Q_{A} $ e os pulsos de clock devem ser aplicados à entrada CKA.
 
-<div style={{ textAlign: 'center' }}><img src='https://maas-watermark-prod-new.cn-wlcb.ufileos.com/ocr%2Fcrop%2F202607090547140b1f5b5e2d134b9d%2Fcrop_1_1783547250880.png?UCloudPublicKey=TOKEN_6df395df-5d8c-4f69-90f8-a4fe46088958&Signature=8hz0POlqlfLbh3jgtY688md2DiY%3D&Expires=1784152050' alt='OCR图片'/></div>
+<div style={{ textAlign: 'center' }}>![OCR图片](/img/imported/4e5faa22a3bc3a3e53f91c4be3dd624048b56859.png)</div>
 
 <div align="center">
 
@@ -45,7 +45,7 @@ b) Modo 2: Divisor simétrico por 10
 
 Neste caso, deve-se conectar a saída $ Q_{D} $ externamente à entrada CKA e os pulsos de clock devem ser aplicados na entrada CKB. A saída $ Q_{A} $ fornecerá uma onda quadrada simétrica com 1/10 da frequência do sinal CKB.
 
-<div style={{ textAlign: 'center' }}><img src='https://maas-watermark-prod-new.cn-wlcb.ufileos.com/ocr%2Fcrop%2F202607090547140b1f5b5e2d134b9d%2Fcrop_2_1783547250889.png?UCloudPublicKey=TOKEN_6df395df-5d8c-4f69-90f8-a4fe46088958&Signature=hlopdJjUHc90nDZXWkSu3l%2BMJk4%3D&Expires=1784152050' alt='OCR图片'/></div>
+<div style={{ textAlign: 'center' }}>![OCR图片](/img/imported/1d1ae8ee1f6bafa7c575127bc1185a79a6a9219f.png)</div>
 
 <div align="center">
 
@@ -59,7 +59,7 @@ Modo 2
 
 Neste caso, não há necessidade de ligações externas. Para o divisor por 2 utiliza-se CKA como entrada e $ Q_{A} $ como saída. Para o divisor por 5 utiliza-se CKB como entrada $ e Q_{D} $ como saída.
 
-<div style={{ textAlign: 'center' }}><img src='https://maas-watermark-prod-new.cn-wlcb.ufileos.com/ocr%2Fcrop%2F202607090547140b1f5b5e2d134b9d%2Fcrop_1_1783547250895.png?UCloudPublicKey=TOKEN_6df395df-5d8c-4f69-90f8-a4fe46088958&Signature=eShvsn7A2dR4%2F77sG6dADdGCVOk%3D&Expires=1784152050' alt='OCR图片'/></div>
+<div style={{ textAlign: 'center' }}>![OCR图片](/img/imported/6792a9939e7d97f4f10bf6f345a63d6a46443200.png)</div>
 
 <table border="1"><tr><td>$Q_{D}$</td><td>$Q_{C}$</td><td>$Q_{B}$</td><td>$Q_{A}$</td></tr><tr><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>0</td><td>0</td><td>0</td><td>1</td></tr><tr><td>0</td><td>1</td><td>1</td><td rowspan="3"></td></tr><tr><td>0</td><td>1</td><td>1</td></tr><tr><td>1</td><td>0</td><td>0</td></tr></table>
 
@@ -138,7 +138,7 @@ Exemplo de utilização - Contador Crescente Módulo 6 (0 a 5)
 
 Após o $ 6^{\circ} $ pulso de clock, este contador deve voltar ao estado inicial 0. Observando-se a tabela do contador de décadas, percebe-se que é possivel utilizar as saídas $ Q_{C}eQ_{B} $ para fornecer o RESET, desta forma o contador irá reiniciar o seu ciclo de contagem.
 
-<div style={{ textAlign: 'center' }}><img src='https://maas-watermark-prod-new.cn-wlcb.ufileos.com/ocr%2Fcrop%2F202607090547140b1f5b5e2d134b9d%2Fcrop_2_1783547250900.png?UCloudPublicKey=TOKEN_6df395df-5d8c-4f69-90f8-a4fe46088958&Signature=d%2F3wptqwG8mau9U6f3AhPT78%2BfI%3D&Expires=1784152050' alt='OCR图片'/></div>
+<div style={{ textAlign: 'center' }}>![OCR图片](/img/imported/b70fb9cda69735a8d03b2c751f18aa58557350a2.png)</div>
 
 <div align="center">
 
@@ -160,18 +160,18 @@ M3- A verificação experimental de um contador de módulo 60 será realizada pe
 
 P1- Montar um contador de década conforme diagrama dado a seguir. Verificar a sequência de contagem através de um display (RI-I)
 
-<div style={{ textAlign: 'center' }}><img src='https://maas-watermark-prod-new.cn-wlcb.ufileos.com/ocr%2Fcrop%2F202607090547140b1f5b5e2d134b9d%2Fcrop_1_1783547250919.png?UCloudPublicKey=TOKEN_6df395df-5d8c-4f69-90f8-a4fe46088958&Signature=I6cWwvHQSHC13AEH8YljcNH0pDU%3D&Expires=1784152050' alt='OCR图片'/></div>
+<div style={{ textAlign: 'center' }}>![OCR图片](/img/imported/0dc5397695da558206cafaf627f6a66ebd2a92d4.png)</div>
 
 Obs: Para fornecer pulsos de clock adequados, utilizar o circuito eliminador de ruído.
 
 P2- Montar um circuito divisor de frequência por 10 simétrico, conforme diagrama dado a seguir. Utilizando o gerador de onda quadrada com saída TTL, ajustar a frequência em 10kHz e injetar na entrada CKB. Acompanhar com o osciloscópio o sinal nas saídas $ Q_{A} $ e $ Q_{D} $ (RI-II)
 
-<div style={{ textAlign: 'center' }}><img src='https://maas-watermark-prod-new.cn-wlcb.ufileos.com/ocr%2Fcrop%2F202607090547140b1f5b5e2d134b9d%2Fcrop_2_1783547250936.png?UCloudPublicKey=TOKEN_6df395df-5d8c-4f69-90f8-a4fe46088958&Signature=6OlwKOfURI8LL57MweVx6V%2FVrNY%3D&Expires=1784152050' alt='OCR图片'/></div>
+<div style={{ textAlign: 'center' }}>![OCR图片](/img/imported/d8e596bba4accacef719d711a5cafc6aa6e8d383.png)</div>
 
 
 P3- Montar um contador módulo 60 conforme diagrama de blocos dado a seguir. Acompanhar nos displays, a sequência de contagem, conforme se aplicam pulsos de clock ao circuito (RI-III).
 
-<div style={{ textAlign: 'center' }}><img src='https://maas-watermark-prod-new.cn-wlcb.ufileos.com/ocr%2Fcrop%2F202607090547140b1f5b5e2d134b9d%2Fcrop_1_1783547250951.png?UCloudPublicKey=TOKEN_6df395df-5d8c-4f69-90f8-a4fe46088958&Signature=fcSryqQiQpBFpMMSVRzvtiY%2BwfM%3D&Expires=1784152050' alt='OCR图片'/></div>
+<div style={{ textAlign: 'center' }}>![OCR图片](/img/imported/009b7372f9f5684a146a4847540dcdcb9b258d7a.png)</div>
 
 Q1. Utilizando o CI 7490, elabore um circuito divisor de frequência por 6. Explique.
 
