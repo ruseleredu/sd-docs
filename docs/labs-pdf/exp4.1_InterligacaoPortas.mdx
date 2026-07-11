@@ -1,0 +1,453 @@
+---
+title: Exp4.1 - Interligação de Portas Básicas
+description: Interligar portas básicas com a finalidade de verificar a equivalência entre elas.
+---
+
+## Objetivos
+
+- Familiarização com montagens de circuitos lógicos.
+
+- Interligar portas básicas com a finalidade de verificar a equivalência entre elas.
+
+- Identificar níveis lógicos, analisando-se as tensões presentes em pontos solicitados dos circuitos.
+
+- Construir e interpretar tabelas.
+
+## Preparação
+
+## Conceitos
+
+## 1) Circuitos lógicos
+
+São circuitos de comutação que têm o funcionamento fundamentado em expressões algébricas booleanas.
+
+Os circuitos combinacionais são aqueles cujas saídas são válidas apenas enquanto houver sinais presentes nas entradas. Retirado-se os sinais das entradas cessam-se as respostas nas saídas.
+
+<div align="center">
+
+2. Tabela auxiliar
+
+</div>
+
+<table border="1"><tr><td colspan="4">Identidades Booleanas</td></tr><tr><td>OR</td><td colspan="2">AND</td><td>NOT</td></tr><tr><td>A+0=A</td><td colspan="2">A.0=0</td><td>$\overline{0}=1$</td></tr><tr><td>A+1=1</td><td colspan="2">A.1=A</td><td>$\overline{1}=0$</td></tr><tr><td>A+$\overline{A}=1$</td><td colspan="2">A.$\overline{A}=0$</td><td>$\overline{A}=A$</td></tr><tr><td>A+A=A</td><td colspan="2">A.A=A</td><td></td></tr><tr><td colspan="4">Propriedades Associativas</td></tr><tr><td colspan="2">$(A+B)+C=A+(B+C)$</td><td colspan="2">$(A\cdot B)\cdot C=A\cdot(B\cdot C)$</td></tr><tr><td colspan="4">Propriedades Comutativas</td></tr><tr><td colspan="2">A+B=B+A</td><td colspan="2">A.B=B.A</td></tr><tr><td colspan="4">Propriedade Distributiva</td></tr><tr><td colspan="4">A.(B+C)=A.B+A.C</td></tr><tr><td colspan="4">Teorema de De Morgan</td></tr><tr><td colspan="4">$\overline{A.\overline{B}\dots}=\overline{A}+\overline{B}+\dots \overline{A+\overline{B}\dots}=\overline{A}.\overline{B}\dots$</td></tr><tr><td colspan="4">Expressões Auxiliares</td></tr><tr><td>A+A.B=A</td><td>A+$\overline{A}.B=A+B$</td><td>$\overline{A}+\overline{A}.B=\overline{A}$</td><td>$\overline{A}+A.\overline{B}=\overline{A}+\overline{B}$</td></tr><tr><td>$\overline{A}+A.B=\overline{A}+B$</td><td>A+A.$\overline{B}=A$</td><td>$\overline{A}+\overline{A}.\overline{B}=\overline{A}$</td><td>A+$\overline{A}.\overline{B}=A+\overline{B}$</td></tr></table>
+
+$$
+(A + B) \cdot (A + C) = A + B \cdot C
+$$
+
+## 3) Tabela de equivalência
+
+<table border="1">
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
+## 4) Provador Lógico com LED
+
+Na maioria das experiências o circuito abaixo pode ser utilizado como um provador de estados lógicos sem qualquer problema. Ao tocar os terminais do CI com a extremidade de teste (T) do provador, o LED acenderá para nível alto ou permanecerá apagado para nível baixo.
+
+<div style={{ textAlign: "center" }}>
+  ![OCR图片](/img/imported/0344d6f73d7f449b532a26c6fcd90c43f84462fd.png)
+</div>
+
+Sempre que for necessário, o circuito apresentado poderá ser utilizado para verificar o estado lógico da saída de uma porta lógica, porém é conveniente lembrar que para nível alto o circuito carrega a saída da porta lógica, solicitando, aproximadamente, 1,6 mA de corrente. Desta forma, o provador lógico com LED deve ser usado levando em conta este efeito, uma vez que a carga imposta pelo circuito pode fazer o nível de tensão cair abaixo do $ V\_{IHmim} $ e gerar erros lógicos para os estágios seguinte.
+
+Um provador lógico mais eficiente pode ser construído, acrescentando ao circuito uma das portas do CI 7407 (seis buffers com coletor aberto). O circuito assim constituiído poderá indicar o
+
+estado lógico em qualquer ponto do circuito, sem o risco de provocar a degradação do nível lógico necessário para acionamento de outras portas.
+
+<div style={{ textAlign: "center" }}>
+  ![OCR图片](/img/imported/5e40c827411ec6592e0a697924706e67772b814c.png)
+</div>
+
+## Metodologia
+
+M1- Para mostrar como as portas lógicas podem ser interligadas umas as outras formando circuitos mais complexos, serão realizadas montagens mostrando como obter uma certa porta lógica a partir de outra com lógica diferente.
+
+## Relação de Material
+
+<table border="1">
+  <tr>
+    <td>Quantidade</td>
+    <td>Descrição</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>fonte de tensão de 5V</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>matriz de contatos</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>multimetro</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>CI 7400</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>CI 7402</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>CI 7404</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>CI 7407 não é necessário</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>CI 7408</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>CI 7432</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>LED</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>resistor de 1kΩ</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>cabos banana-banana</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td>fios rígidos de 0,51 mm Ø</td>
+  </tr>
+</table>
+
+P1- Fixar os Cls 7404 e 7408 sobre a matriz de contatos
+
+P2- Preparar os Cls para serem alimentados com a tensão continua de 5V, fazendo as seguinte ligações:
+
+- Pino 14 do $ \mathrm{C l}_{1} $ com o pino 14 do $ \mathrm{C l}_{2} $ ao (+)
+
+- Pino 7 $ \mathrm{C l}_{1} $ com o pino 7 do $ \mathrm{C l}_{2} $ ao (-)
+
+P3- Completar as ligações conforme o diagrama seguinte.
+
+<div style={{ textAlign: "center" }}>
+  ![OCR图片](/img/imported/ae2b38008299cb24f37178335940f99663aa8e0a.png)
+</div>
+
+P4- Ligar a fonte de alimentação.
+
+P5- Aplicar níveis lógicos às entradas A e B do circuito. Para cada condição de entrada, verificar o estado lógico da saída "S" através do provador lógico ou um voltímetro. (RI-I)
+
+P6- Realizar os mesmos procedimentos anteriores para testar os circitos seguints:
+
+<div style={{ textAlign: "center" }}>
+  ![OCR图片](/img/imported/991ec84efa85f7d1cd7c76a638083c61d7c19ccc.png)
+</div>
+
+<div align="center">
+
+(RI-II)
+
+</div>
+
+<div style={{ textAlign: "center" }}>
+  ![OCR图片](/img/imported/c14bf909804ac177d30f746240f367378fa16338.png)
+</div>
+
+<div align="center">
+
+(RI-III)
+
+</div>
+
+<div style={{ textAlign: "center" }}>
+  ![OCR图片](/img/imported/7a7c03165eb662b29fbabae73140837e944b4828.png)
+</div>
+
+<div align="center">
+
+(RI-IV)
+
+</div>
+
+<div style={{ textAlign: "center" }}>
+  ![OCR图片](/img/imported/bcca2f9f3d1ac313803d9bc936268ee2491ceecc.png)
+</div>
+
+<div align="center">
+
+(RI-V)
+
+</div>
+
+## Questões
+
+Q1- Explicar por que as portas nas configurações abaixo, são equivalentes.
+
+<div style={{ textAlign: "center" }}>
+  ![OCR图片](/img/imported/3018ca628e6a2048ba224ed65c3bcf936975e3d9.png)
+</div>
+
+<div style={{ textAlign: "center" }}>
+  ![OCR图片](/img/imported/bb1b69f9941d35780d66df1296bebcd4dcb908fd.png)
+</div>
+
+Q2- Elaborar um circuito equivalente ao apresentado abaixo, usando somente portas NAND.
+
+<div style={{ textAlign: "center" }}>
+  ![OCR图片](/img/imported/7db3ea030d3a732bc8db4375212213517ff0cadf.png)
+</div>
+
+<table border="1">
+  <tr>
+    <td colspan="3">Instituição:</td>
+  </tr>
+  <tr>
+    <td colspan="3">Curso: Discipl.: Série/Turma:</td>
+  </tr>
+  <tr>
+    <td colspan="3">Prof.: Data: Conceito:</td>
+  </tr>
+  <tr>
+    <td colspan="2">Nome</td>
+    <td>Nº</td>
+  </tr>
+  <tr>
+    <td colspan="2"></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td colspan="2"></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td colspan="2"></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td colspan="2"></td>
+    <td></td>
+  </tr>
+</table>
+
+Relatório Imediato da Experiência 4.1
+
+Interligação de Portas Básicas
+
+I) Analisando a tabela-verdade do circuito ensaiado, verifica-se que este circuito executa a função **_ , portanto trata-se de um circuito equivalente à porta lógica _**.
+
+Porta lógica e circuito lógico equivalente
+
+<table border="1">
+  <tr>
+    <td colspan="2">Entradas</td>
+    <td>Saída</td>
+  </tr>
+  <tr>
+    <td>A</td>
+    <td>B</td>
+    <td>S</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
+II) Da mesma forma, verifica-se que o circuito abaixo executa a função \_\_\_,
+
+portanto trata-se de um circuito equivalente à porta lógica \_\_\_.
+
+<table border="1">
+  <tr>
+    <td colspan="2">Entradas</td>
+    <td>Saída</td>
+  </tr>
+  <tr>
+    <td>A</td>
+    <td>B</td>
+    <td>S</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
+Porta lógica e circuito lógico equivalente
+
+III) A tabela-verdade do circuito ensaiado apresenta-se idênica à tabela de uma função
+
+**_, portanto o circuito estudado equivale a uma porta lógica _**.
+
+<table border="1">
+  <tr>
+    <td colspan="2">Entradas</td>
+    <td>Saída</td>
+  </tr>
+  <tr>
+    <td>A</td>
+    <td>B</td>
+    <td>S</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
+Porta lógica e circuito lógico equivalente
+
+IV) Neste caso, o circuito executa a função **_ , portanto trata-se de um circuito equivalente à porta lógica _**.
+
+<table border="1">
+  <tr>
+    <td colspan="2">Entradas</td>
+    <td>Saída</td>
+  </tr>
+  <tr>
+    <td>A</td>
+    <td>B</td>
+    <td>S</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
+Porta lógica e circuito lógico equivalente
+
+V) Por estarem interligadas, as duas entradas da porta lógica sempre recebem o mesmo sinal, ficando a saída da seguinte forma: $ S=\overline{A+A}=\overline{A.A}=\overline{A} $ ou seja, o circuito executa a função **_, portanto trata-se de um circuito equivalente à porta lógica _**.
+
+<table border="1">
+  <tr>
+    <td>Entrada</td>
+    <td>Saída</td>
+  </tr>
+  <tr>
+    <td>A</td>
+    <td>S</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
+Porta lógica e circuito lógico equivalente
+
+---
+
+- https://ocr.z.ai/

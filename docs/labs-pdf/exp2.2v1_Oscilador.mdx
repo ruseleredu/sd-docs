@@ -1,0 +1,239 @@
+---
+title: Exp2.2 - Oscilador
+description: Verificar o funcionamento de um oscilador pelo uso de portas interligadas.
+---
+
+## Objetivos
+
+- Verificar o funcionamento de um oscilador pelo uso de portas interligadas.
+
+Preparação
+
+## Conceitos
+
+## 1) Matriz de Contatos
+
+Uma grande parte dos circuitos eletrônicos, especialmente os digitais, quando em fase de criação ou desenvolvimento, são ensaiados sobre uma base chamada matriz de contatos.
+
+A matriz de contatos é formada, basicamente, por uma peça plástica moldada com espaços internos próprios para a acomodação de conectores metálicos. Os conectores metálicos são acessados através dos pequenos furos que cobrem a superfície da peça plástica.
+
+Os pequenos furos servem para a fixação e conexão dos componentes eletrônicos. Quando encaixados, os terminais dos componentes ficam presos entre duas lâminas que constituem os conectores metálicos.
+
+Durante uma montagem, primeiro os componentes são fixados sobre a matriz, depois, através de pedaços de fios rígidos de diâmetro apropiado, as demais interligações são efetuadas. Assim, sobre a matriz pode-se montar desde circuitos simples até os mais complexos sem a necessidade de soldar os componentes.
+
+Existem muitos modelos de matriz de contatos, uns com mais, outros com menos pontos de interligação, porém, a organização dos contatos obedece sempre a um mesmo padrão.
+
+<div style={{ textAlign: "center" }}>
+  ![OCR图片](/img/imported/154ca6e30f5c1185dc6fdcf65465a6d7a3fc3e4d.png)
+</div>
+
+Pode-se observar nesta figura que a matriz é composta por dois tipos de blocos de contatos (bloco 1 e bloco 2). No bloco 1 cada 5 furos dão acesso ao mesmo conector metálico, localizado internamente à base plástica. No bloco 2, os furos estão organizados visualmente em grupos de 5 mas, só visualmente, pois internamente, todos os pontos de uma mesma linha estão interligados entre si.
+
+Normalmente as linhas do bloco 2 são utilizadas como barramento de distribuição de alimentação, ou seja, pode-se adotar uma das linhas como Gnd e outra como Vcc.
+
+No comércio, encontra-se modelos de diversos fabricantes, tais como Celis, Shakomiko e outros Entre os modelos importados a marca Proto-board é a mais conhecida.
+
+## 2) Alimentando um Circuito
+
+Todo circuito eletrônico para funcionar necessita de uma fonte de energia que, na maioria dos casos se resume em uma fonte de tensão. A fonte de tensão se encarrega de fornecer a tensão elétrica adequada e necessária para o correto funcionamento do circuito
+
+Muitas vezes esta fonte de tensão elétrica é referida como fonte de alimentação do circuito. Assim, o termo "alimentar um circuito" significa ligar o circuito a uma fonte de tensão apropiada.
+
+## 3) Diodo Emissor de Luz
+
+O diodo emissor de luz (LED) é um componente que emite luz quando polarizado diretamente. Para polarizar um LED diretamente liga-se o catodo ao terra do circuito e o anodo ao positivo, juntamente com uma resistência série que tem como finalidade a limitação de corrente através da junção.
+
+Quando em operação o LED apresenta uma queda de tensão $(V_{\gamma})$, da ordem de 1,7 a 2,1V entre seus terminais e deve passar por ele uma corrente de aproximadamente 10mA a fim de que este possa emitir uma luminosidade ideal.
+
+<div style={{ textAlign: "center" }}>
+  ![OCR图片](/img/imported/e41e9de72893b2628fb52616629b319a24e02184.png)
+</div>
+
+## Metodologia
+
+M1- Para verificar como a matriz de contatos está organizada serão medidas as resistências entre os furos destinados à instalação dos componentes. Os pontos que apresentarem resistência zero (ou muito próximo de zero) pertencerão a mesma linha ou coluna.
+
+M2- Para realizar a fase de treinamento de colocação e retirada de componentes na base de montagem, alimentação do circuito e interligação de terminais, será utilizado como referência o circuito de um diodo emissor de luz.
+
+M3- Em seguida um circuito integrado 7400 e vários componentes serão utilizados para montar um oscilador com frequência em torno de 1Hz.
+
+## Relação de Material
+
+<table border="1">
+  <tr>
+    <td>Quantidade</td>
+    <td>Descrição</td>
+  </tr>
+  <tr>
+    <td>01</td>
+    <td>matriz de contatos</td>
+  </tr>
+  <tr>
+    <td>01</td>
+    <td>fonte de tensão CC ajustável ou fixa em +5V</td>
+  </tr>
+  <tr>
+    <td>01</td>
+    <td>multimetro analógico ou digital</td>
+  </tr>
+  <tr>
+    <td>01</td>
+    <td>alicate de corte pequeno</td>
+  </tr>
+  <tr>
+    <td>01</td>
+    <td>CI 7400</td>
+  </tr>
+  <tr>
+    <td>01</td>
+    <td>resistor de 150Ω</td>
+  </tr>
+  <tr>
+    <td>01</td>
+    <td>resistor de 330Ω</td>
+  </tr>
+  <tr>
+    <td>01</td>
+    <td>resistor 1kΩ</td>
+  </tr>
+  <tr>
+    <td>01</td>
+    <td>resistor de 2,2kΩ</td>
+  </tr>
+  <tr>
+    <td>01</td>
+    <td>LED</td>
+  </tr>
+  <tr>
+    <td>02</td>
+    <td>capacitorores de 220μF/25V(eletrolítico)</td>
+  </tr>
+  <tr>
+    <td>--</td>
+    <td>fios rígidos de 0,51mm∅</td>
+  </tr>
+</table>
+
+Praticando
+
+Organização da matriz de contatos
+
+P1- Colocar a chave seletora do multimetro na posição apropriada para medição de resistências ( $ \Omega $ ) e selecionar o fundo de escala mais baixo.
+
+P6- Utilizar dois cabos banana-banana para interligar a fonte de tensão com a matriz de contatos.
+
+P7- Ligar a fonte de tensão anteriormente ajustada em 5V. Caso o LED não acender, conferir todas as ligações e verificar se o LED está ligado com a polarização correta. Em último caso substituir o LED. (RI-II)
+
+## Prática de montagem - circuito oscilador
+
+P8- Fixar o circuito integrado 7400 na matriz de contatos, conforme o exemplo abaixo, tomando o cuidado de verificar se todos os terminais estão na posição correta.
+
+Com um pouco de pressão o circuito integrado se ajusta perfeitamente nos pontos de contatos. Os componentes sempre devem ser instalados cuidadosamente, um descuido durante esta operação poderá dobrar os terminais prejudicando as ligações que são feitas unicamente por contato.
+
+<div style={{ textAlign: "center" }}>
+  ![OCR图片](/img/imported/9046eb4f14f92e00ee7da6b1c2cfeecf7367851b.png)
+</div>
+
+P9- Contar os pontos de contato que ainda restaram para cada terminal do circuito integrado - 4 pontos de contato para cada terminal. Caso esta situação não ocorrer é porque o circuito integrado foi instalado num local indevido.
+
+Obs: Se for necessário retirar o CI (circuito integrado) da placa de montagem, utilizar uma ferramenta própria para esta atividade ou então utilizar uma pequena chave de fenda colocada cuidadosamente por baixo do circuito integrado, ora de um lado ora do outro, como uma alavanca, forçando aos poucos o CI para cima.
+
+P10- Preparar a alimentação do CI ligando-se os seguinte terminais (pinos):
+
+Pino 14 do CI com o conector (+)
+
+Pino 07 do CI com o conector (-)
+
+<div style={{ textAlign: "center" }}>
+  ![OCR图片](/img/imported/8f51551d2969c2d756d6f8c85e2fd372e7aa14be.png)
+</div>
+
+<div align="center">
+
+P11- Completar o circuito conforme a figura seguinte. Para isto fazer as ligações necessárias com os fios rígidos, anotando no circuito as ligações realizadas a fim de certificar-se de que todas as ligações foram feitas.
+
+</div>
+
+<div style={{ textAlign: "center" }}>
+  ![OCR图片](/img/imported/3265cedbf53d6d33b1facec1719bd5fcc6374bcc.png)
+</div>
+
+<div align="center">
+
+P12- Através de cabos banana-banana ligar o positivo da fonte de tensão de 5 V ao conector (+) da matriz de contatos e o negativo ao conector (-).
+
+</div>
+
+<div align="center">
+
+P13- Ligar a fonte de alimentação e verificar o sinal de saida do circuito (pino 11) do CI. (RI-III)
+
+</div>
+
+<table border="1">
+  <tr>
+    <td colspan="3">Instituição:</td>
+  </tr>
+  <tr>
+    <td colspan="3">Curso: Discipl.: Série/Turma:</td>
+  </tr>
+  <tr>
+    <td colspan="3">Prof.: Data: Conceito:</td>
+  </tr>
+  <tr>
+    <td colspan="2">Nome</td>
+    <td>Nº</td>
+  </tr>
+  <tr>
+    <td colspan="2"></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td colspan="2"></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td colspan="2"></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td colspan="2"></td>
+    <td></td>
+  </tr>
+</table>
+
+## Relatório Imediato da Experiência 2.2
+
+Utilização da Matriz de Contatos
+
+## I - Organização de uma Matriz de Contatos
+
+Para verificar a organização da matriz de contatos, foram realizadas medidas de resistência entre os pontos que a formam. Quando dois ou mais pontos pertenciam a uma mesma linha ou mesma coluna, o medidor indicava resistência baixa, aproximadamente zero. Quando os pontos pertenciam a linhas ou colunas diferentes, o medidor indicava resistência infinita.
+
+Com o resultado das medidas efetuadas chegou-se à seguinte configuração:
+
+## II- Ligação de um Diodo Emissor de Luz
+
+O desenho seguinte mostra, de forma esquemática, como os componentes foram interligados sobre a matriz de contatos, para compor o circuito polarizador do Diodo Emissor de Luz.
+
+## III- Circuito Oscilador
+
+Para praticar o uso da matriz de contatos foi construído um circuito oscilador com frequência em torno de 1 Hz. Na prática, o oscilador apresentou a frequência de***Hz. Para determinar a frequência do oscilador foi utilizado o seguinte procedimento: ***
+
+--a) Conjunto R+ diodo LED.
+
+Tem-se a seguir, o desenho esquemático do circuito oscilador, mostrando todas as ligações efetuadas.
+
+Fotografe ou esboce a forma de onda obtidas na tela do osciloscópio sobre:
+
+b) Somente sobre o resistor limitador de 1kohm.
+
+c) Somente sobre o diodo LED.
+
+i) Existe diferença entre os níveis de tensão nas três medidas? Justifique.
+
+ii) Existe diferença na frequência das formas de onda nas três medidas? Justifique.
+
+---
+
+- https://ocr.z.ai/

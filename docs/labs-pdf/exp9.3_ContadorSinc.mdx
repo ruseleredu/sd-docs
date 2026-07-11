@@ -1,0 +1,462 @@
+---
+title: Exp9.3 - Contadores Síncronos
+description: Projetar e ensaiar contadores sincronos.
+---
+
+## Objetivos
+
+- Projetar e ensaiar contadores sincronos.
+
+Preparação
+
+## Conceitos
+
+O projeto de um contador sincrono corresponde a determinar o circuito combinacional que irá determinar os estados futuros (entradas dos flip-flops) a partir dos estados atuais (saídas dos flip-flops). Deve-se então, conhecer a sequência de contagem desejada e o tipo de flip-flop utilizado a fim de se projetar o circuito combinacional.
+
+O contador sincrono é mais versátil que o contador assíncrono, pois permite elaborar qualquer sequência de contagem e admite uma frequência maior dos pulsos de clock.
+
+<div style={{ textAlign: "center" }}>
+  ![OCR图片](/img/imported/f934b10b2070d8d2320cde4716702a91d446f959.png)
+</div>
+
+## Metodologia
+
+M1- Será montado e ensaiado um contador sincrono com flip-flop tipo T. Estes flip-flops serão obtidos a partir de flip-flops JK master-slave (CI7476).
+
+M2- Fornecendo pulsos de clock, será avaliada experimentalmente a sequência de contagem através de um display de 7 segmentos.
+
+M3- Em seguida, será projetado um contador sincrono crescente módulo 10 com flip-flops tipo T, acompanhando as seguinte etapas de projeto:
+
+a) Obtenção da tabela-verdade do contador sincrono desejado
+
+b) Elaboração dos Mapas de Veitch-Karnaugh para obtenção das equações de saída do circuito combinacional.
+
+c) Interligação do circuito sequencial com o combinacional.
+
+M4- Uma vez montado o circuito completo, serão aplicados pulsos de clock e observada a sequência de contagem através do display.
+
+## Relação de Material
+
+<table border="1">
+  <tr>
+    <td>Quantidade</td>
+    <td>Descrição</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>matriz de contatos</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>fonte de alimentação de +5V</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>CI 7400</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>CI 7408</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>CI 7476</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>CI 7447</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>CI 7432</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>display de 7-segmentos tipo anodo comum</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>resistores de 330Ω</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>resistores de 1kΩ</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>chave H-H</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td>fios rígidos de 0,51 mm∅</td>
+  </tr>
+</table>
+
+## Praticando
+
+P1- Montar o contador sincrono conforme o diagrama a seguir. Aplicar pulso de clock e anotar a sequência de contagem (RI-I).
+
+<div style={{ textAlign: "center" }}>
+  ![OCR图片](/img/imported/4d77088cb9cb32fb8a6221529758bcece6cdf75b.png)
+</div>
+
+<div style={{ textAlign: "center" }}>
+  ![OCR图片](/img/imported/f6905e202272d9f39945a3a639b1cd7eea1eb05b.png)
+</div>
+
+Obs: Para fornecer pulsos de clock adequados, utilizar o circuito eliminador de ruído.
+
+P2- Projetar, montar e verificar o funcionamento de um contador sincrono crescente de módulo 10 com flip-flops tipo T (RI-II).
+
+## Questões
+
+Q1. Projetar um contador de década sincrono com flip-flops tipo D.
+
+Q2. Forneça o diagrama de estados completo de um contador sincrono crescente módulo 10 que utiliza flip-flops tipo T (devem-se considerar os estados secundários).
+
+Q3. Projetar um contador sincrono decrescente módulo 8 com flip-flops JK.
+
+Q4. Pesquisar as características principais do CI 74190 (contador sincrono bi-directional).
+
+Q5. Avaliar a sequência de contagem do circuito a seguir. Adotar estado inicial = 0.
+
+<div style={{ textAlign: "center" }}>
+  ![OCR图片](/img/imported/4462a0ea0e25e3c156d8125d69229b3c8c581796.png)
+</div>
+
+<div style={{ textAlign: "center" }}>
+  ![OCR图片](/img/imported/987f7e3e16d90ebe2f7d624bdd367fac424366f3.png)
+</div>
+
+<div style={{ textAlign: "center" }}>
+  ![OCR图片](/img/imported/5cc9af5dae9c5238f48a5bb15b3b7e00f77a3697.png)
+</div>
+
+<div style={{ textAlign: "center" }}>
+  ![OCR图片](/img/imported/436d14ff99e214092b36ff074f19403f517d51de.png)
+</div>
+
+<div style={{ textAlign: "center" }}>
+  ![OCR图片](/img/imported/da386639c0bbdece128a5aba913851a1d8ec1671.png)
+</div>
+
+<div style={{ textAlign: "center" }}>
+  ![OCR图片](/img/imported/d161fd2e698efc8d81957485283c3efa228cbbed.png)
+</div>
+
+<div style={{ textAlign: "center" }}>
+  ![OCR图片](/img/imported/654c31d310d958a47c4e33b311a059fe690d4c26.png)
+</div>
+
+<table border="1">
+  <tr>
+    <td colspan="3">Instituição:</td>
+  </tr>
+  <tr>
+    <td colspan="3">Curso: Discipl.: Série/Turma:</td>
+  </tr>
+  <tr>
+    <td colspan="3">Prof.: Data: Conceito:</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Nome</td>
+    <td>N°</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
+Relatório Imediato da Experiência 9.3
+
+Contadores Sincronos
+
+## I - Contador Síncrono com Flip-Flops Tipo T
+
+Utilizou-se o circuito a seguir, no qual os flip-flops tipo T foram montados através de Flip- Flops tipo JK Master-Slave com as entradas curto-circuitadas.
+
+Aplicando-se pulsos de clock, verificou-se a seguinte sequência de contagem através do display:
+
+<table border="1">
+  <tr>
+    <td></td>
+    <td>Display</td>
+  </tr>
+  <tr>
+    <td>Estado inicial</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Após 1º CK</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Após 2º CK</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Após 3º CK</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Após 4º CK</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Após 5º CK</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Após 6º CK</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Após 7º CK</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Após 8º CK</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Após 9º CK</td>
+    <td></td>
+  </tr>
+</table>
+
+Circuito lógico utilizado
+
+## II - Projeto de um Contador Síncrono Módulo 10 com Flip-Flop Tipo T
+
+<div align="center">
+
+a) Tabela-verdade do contador.
+
+</div>
+
+<table border="1">
+  <tr>
+    <td rowspan="2">Estado atual</td>
+    <td rowspan="2">Estado futuro</td>
+    <td colspan="4">Saídas atual dos Flip-Flops</td>
+    <td colspan="4">Saídas futuras dos Flip-Flops</td>
+    <td colspan="4">Entrada dos Flip-Flops Tipo T</td>
+  </tr>
+  <tr>
+    <td>Q3</td>
+    <td>Q2</td>
+    <td>Q1</td>
+    <td>Q0</td>
+    <td>Q3</td>
+    <td>Q2</td>
+    <td>Q1</td>
+    <td>Q0</td>
+    <td>T3</td>
+    <td>T2</td>
+    <td>T1</td>
+    <td>T0</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
+b) Mapas de Veitch-Karnaugh para obtenção das equações de saída.
+
+<div style={{ textAlign: "center" }}>
+  ![OCR图片](/img/imported/22ae86ebaa8e0eec9001e6793f5f24f22c5ef987.png)
+</div>
+
+<div style={{ textAlign: "center" }}>
+  ![OCR图片](/img/imported/ca11069fc88f058f5d6071b38a7a7561069bad9e.png)
+</div>
+
+<div style={{ textAlign: "center" }}>
+  ![OCR图片](/img/imported/0834ae58c36a88f3eb3657d6ae7ddaedc8ccc82e.png)
+</div>
+
+<div style={{ textAlign: "center" }}>
+  ![OCR图片](/img/imported/022bb16812615aebbcd8f9c102727ba31f8b9b2e.png)
+</div>
+
+c) Desenho do circuito

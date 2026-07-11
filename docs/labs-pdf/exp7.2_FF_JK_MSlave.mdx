@@ -1,0 +1,364 @@
+---
+title: Exp7.2 - Flip-Flop JK Master-Slave
+description: Flip-Flop JK Master-Slave, Flip-Flop Tipo D e Flip-Flop Tipo T
+---
+
+# Experiência 7.2: Flip-Flop JK Master-Slave, Flip-Flop Tipo D e Flip-Flop Tipo T
+
+## Objetivos
+
+- Comprovar experimentalmente o funcionamento do flip-flop JK master-slave
+
+- Comprovar experimentalmente o funcionamento do flip-flop tipo D
+
+- Comprovar experimentalmente o funcionamento do flip-flop tipo T
+
+## Preparação
+
+## Conceitos
+
+## 1) Flip-Flop JK
+
+O flip-flop JK é um flip-flop RS aprimorado, onde o erro lógico foi eliminado. Veremos na figura a seguir, como obter o flip-flop JK a partir do flip-flop RS:
+
+<div style={{ textAlign: "center" }}>
+  ![OCR图片](/img/imported/083c3f3d16439daa91204db0877cfd93bc11dd1e.png)
+</div>
+
+<div style={{ textAlign: "center" }}>
+  ![OCR图片](/img/imported/59d1fc6235952debb6ffe68a1be2bfce342a0141.png)
+</div>
+
+Com CK=0, o bloco flip-flop RS fica "travado", ou seja, na saída do flip-flop é mantido o estado lógico anteriormente armazenado, não dependendo das combinações das entradas J e K. Com CK=1, verifica-se a seguinte tabela-verdade:
+
+<table border="1">
+  <tr>
+    <td>CK</td>
+    <td>J</td>
+    <td>K</td>
+    <td>Qf</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>X</td>
+    <td>X</td>
+    <td>Qa</td>
+  </tr>
+  <tr>
+    <td rowspan="4">1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Qa</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>0</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>1</td>
+    <td>$\cdot$</td>
+  </tr>
+</table>
+
+Deve-se ressaltar que enquanto o pulso de CK estiver em nível lógico "1" e mantivermos J=K=1, a complementação das saídas e a realimentação às portas lógicas de entrada vão provocar sucessivas complementações (oscilação na saída) o que ainda torna inviável a utilização destes estados na entrada.
+
+## 2) Flip-Flop JK Master-Slave
+
+Com o objetivo de eliminar a oscilação verificada no flip-flop JK quando temos J=K=CK=1, foi elaborado o seguinte circuito.
+
+<div style={{ textAlign: "center" }}>
+  ![OCR图片](/img/imported/4b6f4b773cf0cd717ba0f36158187d1f02adb054.png)
+</div>
+
+Este circuito representa um flip-flop denominado JK Master-Slave (JK Mestre Escravo).
+
+O flip-flop JK Master-Slave é um circuito sensível à borda de descida do pulso de CK, ou seja, somente na transição de "1" para "0" de CK, verifica-se a tabela-verdade do flip-flop JK:
+
+<div style={{ textAlign: "center" }}>
+  ![OCR图片](/img/imported/1a354c22e3ba5b6a7685cd35ae2f9d23ea73c559.png)
+</div>
+
+Flip-Flop JK Master-Slave
+
+<div style={{ textAlign: "center" }}>
+  ![OCR图片](/img/imported/fdd0fee23af41d4582ac2d70d471aebaa6c2a55c.png)
+</div>
+
+Tabela-Verdade
+
+## 3) Flip-Flops Tipo D e Tipo T
+
+A partir do flip-flop JK master-slave, podemos construir os seguintes flip-flops:
+
+<div style={{ textAlign: "center" }}>
+  ![OCR图片](/img/imported/9655b130859bec6cc78909291aa14ac70a86e05d.png)
+</div>
+
+Flip-Flop Tipo D
+
+<table border="1">
+  <tr>
+    <td>D</td>
+    <td>Qf</td>
+    <td>
+      $\overline{{ Q }}_{f}$
+    </td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+  </tr>
+</table>
+
+Tabela-Verdade
+
+<div style={{ textAlign: "center" }}>
+  ![OCR图片](/img/imported/6195ebac55b2bd9859654808b8e9000fc493e78b.png)
+</div>
+
+<div align="center">
+
+Flip-Flop Tipo T
+
+</div>
+
+<table border="1">
+  <tr>
+    <td>T</td>
+    <td>Qf</td>
+    <td>
+      $\overline{Q}_{f}$
+    </td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>Qa</td>
+    <td>
+      $\overline{Q}_{a}$
+    </td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>
+      $\overline{Q}_{a}$
+    </td>
+    <td>Qa</td>
+  </tr>
+</table>
+
+<div align="center">
+
+Tabela-Verdade
+
+</div>
+
+## Metodologia
+
+M1- Será implementado um flip-flop JK master-slave com portas lógicas.
+
+M2- Obedecendo a uma sequência predeterminada de níveis lógicos nas entradas J e K e comutando o sinal de controle CK, serão verificados os estados lógicos das saídas dos estágios mestre e escravo.
+
+M3- A partir do flip-flop JK master-slave será implementado um flip-flop tipo D e verificado experimentalmente o uso da tabela-verdade.
+
+M4- A partir do flip-flop JK master-slave será implementado um flip-flop tipo T e verificado experimentalmente o usa da tabela-verdade.
+
+## Relação de Material
+
+<table border="1">
+  <tr>
+    <td>Quantidade</td>
+    <td>Descrição</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>matriz de contatos</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>fonte de alimentação +5V</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>CI 7400</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>CI 7404</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>CI 7408</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>LEDs</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>resistores de 1kΩ</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>chave H-H</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td>fios rígidos de 0,51 mm∅</td>
+  </tr>
+</table>
+
+<table border="1">
+  <tr>
+    <td>Praticando</td>
+  </tr>
+</table>
+
+P1- Montar o circuito eliminador de ruído conforme o diagrama dado a seguir:
+
+<div style={{ textAlign: "center" }}>
+  ![OCR图片](/img/imported/c25e5f213dfb137c0ae493c7a8dbe423a66cb05e.png)
+</div>
+
+Obs: Este circuito tem a finalidade de eliminar o efeito bounce gerado por chaves de contatos mecânicos.
+
+P2- Montar o circuito do flip-flop JK master-slave conforme o diagrama dado a seguir:
+
+<div style={{ textAlign: "center" }}>
+  ![OCR图片](/img/imported/a23f2c4d4f537abad9d4064ade1519abc3dddf21.png)
+</div>
+
+P3- Variar os níveis lógicos de entrada segundo a sequência de passos dada (RI-I). Observar e anotar os estados lógicos das saídas do estágio mestre (Qme $ \overline{{Q}} $ m) e do estágio escravo Qe $ \overline{{Q}} $ com provador lógico ou multimetro.
+
+Obs: Utilizando o circuito eliminador de ruído, comutar o controle CK sempre após ajustar a combinação de J e K.
+
+P4- A partir do flip-flop JK master-slave, implementar o circuito do flip-flop tipo D conforme o diagrama dado a seguir:
+
+<div style={{ textAlign: "center" }}>
+  ![OCR图片](/img/imported/0fb23015fefb73983cd2f35d07b58202290eba3b.png)
+</div>
+
+P5- Variando-se os níveis lógicos de entrada, verificar o estado lógico das saídas através de provador lógico ou multimetro, implementando experimentalmente a tabela-verdade de um flip-flop tipo D (RI-II).
+
+P6- A partir do flip-flop JK master-slave, implementar o circuito do flip-flop tipo T conforme o diagrama dado a seguir:
+
+<div style={{ textAlign: "center" }}>
+  ![OCR图片](/img/imported/f6bf049e298c40a913e989fe26fe50bb763f19e2.png)
+</div>
+
+P7- Variando-se os níveis lógicos de entrada, verificar o estado lógico das saídas através de provador lógico ou multimetro, implementando experimentalmente a tabela-verdade de um flip-flop tipo T (RI-III).
+
+## Questões
+
+Q2. Utilizando portas lógicas, implementar um flip-flop JK master-slave sensível à borda de subida do pulso de CK.
+
+Q3. Citar uma aplicação para o flip-flop tipo D.
+
+Q4. Fornecer o circuito com portas lógicas de um flip-flop RS master-slave.
+
+<table border="1">
+  <tr>
+    <td colspan="3">Instituição:</td>
+  </tr>
+  <tr>
+    <td colspan="3">Curso: Discipl.: Série/Turma:</td>
+  </tr>
+  <tr>
+    <td colspan="3">Prof.: Data: Conceito:</td>
+  </tr>
+  <tr>
+    <td colspan="2">Nome</td>
+    <td>Nº</td>
+  </tr>
+  <tr>
+    <td colspan="2"></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td colspan="2"></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td colspan="2"></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td colspan="2"></td>
+    <td></td>
+  </tr>
+</table>
+
+<div align="center">
+
+# Flip-Flop Tipo T
+
+</div>
+
+## I - Flip-Flop JK Master-Slave
+
+Com o objetivo de estudar o funcionamento do flip-flop JK master-slave utilizou-se o circuito a seguir, através do qual, variando-se as combinações de entrada e do controle CK conforme a sequência de passos fornecida na tabela, foram observados os estados lógicos nas saídas através de \_\_\_.
+
+Circuito lógico utilizado
+
+<table border="1"><tr><td>Passos</td><td>J</td><td>K</td><td>CK</td><td>QM</td><td>$\overline{{Q}}_{M}$</td><td>Q</td><td>$\overline{{Q}}$</td></tr><tr><td>$1^{\circ}$ Passo</td><td>1</td><td>0</td><td>1</td><td></td><td></td><td></td><td></td></tr><tr><td>$2^{\circ}$ Passo</td><td>1</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td></tr><tr><td>$3^{\circ}$ Passo</td><td>0</td><td>0</td><td>1</td><td></td><td></td><td></td><td></td></tr><tr><td rowspan="10">$\bullet$</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td></tr><tr><td>0</td><td>1</td><td>1</td><td></td><td></td><td></td><td></td></tr><tr><td>0</td><td>1</td><td>0</td><td></td><td></td><td></td><td></td></tr><tr><td>1</td><td>1</td><td>0</td><td></td><td></td><td></td><td></td></tr><tr><td>1</td><td>1</td><td>1</td><td></td><td></td><td></td><td></td></tr><tr><td>1</td><td>1</td><td>0</td><td></td><td></td><td></td><td></td></tr><tr><td>1</td><td>1</td><td>1</td><td></td><td></td><td></td><td></td></tr><tr><td>1</td><td>1</td><td>0</td><td></td><td></td><td></td><td></td></tr><tr><td>1</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td></tr><tr><td>1</td><td>0</td><td>1</td><td></td><td></td><td></td><td></td></tr><tr><td>$14^{\circ}$ Passo</td><td>1</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td></tr></table>
+
+Analisando-se a tabela-verdade experimental e comparando-a com a teórica, chega-se à seguinte conclusão: \_\_\_
+
+## II - Flip-Flop Tipo D
+
+Com o objetivo de estudar o funcionamento do flip-flop tipo D, utilizou-se o circuito a seguir, através do qual, variando-se as combinações de entrada e do controle CK conforme a sequência de passos fornecida na tabela, forma observados os estados lógicos nas saídas através de leds.
+
+Circuito lógico utilizado
+
+<table border="1">
+  <tr>
+    <td>D</td>
+    <td>CK</td>
+    <td>Q</td>
+    <td>$\overline{Q}$</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
+Analisando-se a tabela-verdade experimental e comparando-a com a teórica, chega-se à seguinte conclusão:\_\_\_
+
+## III - Flip-Flop Tipo T
+
+Com o objetivo de estudar o funcionamento do flip-flop tipo T utilizou-se o circuito a seguir, através do qual, variando-se as combinações de entrada e do controle CK conforme a sequência de passos fornecida na tabela, observou-se os estados lógicos nas saídas através de leds.
+
+Circuito lógico utilizado
+
+<div style={{ textAlign: "center" }}>
+  ![OCR图片](/img/imported/e2178eb22569617b33d199fa0839545aee797c31.png)
+</div>
+
+Analisando-se a tabela-verdade experimental e comparando-a com a teórica, chega-se a
+
+seguinte conclusão: \_\_\_
+
+---
+
+- https://ocr.z.ai/
