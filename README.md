@@ -107,3 +107,9 @@ node scripts/download-circuits.js
 ```bash
 node scripts/pipeline.js
 ```
+
+Scan a single folder:
+
+```bash
+node scripts/download-images.js docs/tutorials
+```
