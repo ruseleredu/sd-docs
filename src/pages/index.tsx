@@ -22,37 +22,37 @@ function HomepageHeader() {
             className="button button--secondary button--lg"
             href="https://moodle.utfpr.edu.br/course/view.php?id=27864"
           >
-            EaD 🌎
+            🌎 EaD
           </Link>
           <Link
             className="button button--secondary button--lg"
             href="https://moodle.utfpr.edu.br/course/view.php?id=28604"
           >
-            LABs 🌎
+            🌎 LABs
           </Link>
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro"
           >
-            Docs 📝
+            📝 Docs
           </Link>
           <Link
             className="button button--secondary button--lg"
             to="/lab/intro"
           >
-            LABs 📝
+            📝 LABs
           </Link>
           <Link
             className="button button--secondary button--lg"
             to="/ead/intro"
           >
-            EaD 📝
+            📝 EaD
           </Link>
           <Link
             className="button button--secondary button--lg"
             to="/pjts/intro"
           >
-            Pjts 📝
+            📝 Projetos
           </Link>
         </div>
       </div>

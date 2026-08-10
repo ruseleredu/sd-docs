@@ -68,6 +68,10 @@ const navbarItems: NavbarItem[] = [
         position: "left",
         items: [
             {
+                to: "/pjts/2026.2", // Link to a page in your PJTS docs
+                label: "Semestre 2026.2",
+            },
+            {
                 to: "/pjts/2026.1", // Link to a page in your PJTS docs
                 label: "Semestre 2026.1",
             },
