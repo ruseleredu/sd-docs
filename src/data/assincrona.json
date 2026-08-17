@@ -1,0 +1,152 @@
+{
+  "tipo": "assincrona",
+  "geradoEm": "2026-08-17T17:17:01.242Z",
+  "totalRegistros": 15,
+  "totalDisciplinas": 1,
+  "disciplinas": [
+    {
+      "codigo": "ELT72B-S21",
+      "disciplina": "SISTEMAS DIGITAIS",
+      "professor": "Adriano Ruseler",
+      "arquivo": "20260807_160728.html",
+      "slug": "elt72b-s21",
+      "registros": [
+        {
+          "semana": 2,
+          "semana_inicio": "24/08/2026",
+          "semana_fim": "30/08/2026",
+          "data_inicio": "24/08/2026",
+          "data_fim": "30/08/2026",
+          "ch_ead": 1,
+          "conteudo_previsto": "Sistemas Numéricos;"
+        },
+        {
+          "semana": 3,
+          "semana_inicio": "31/08/2026",
+          "semana_fim": "06/09/2026",
+          "data_inicio": "31/08/2026",
+          "data_fim": "06/09/2026",
+          "ch_ead": 1,
+          "conteudo_previsto": "Portas lógicas: NÃO, E, OU, NÃO-E e NÃO-OU. Tabela Verdade. Mintermos e Maxtermos. Funções lógicas;"
+        },
+        {
+          "semana": 4,
+          "semana_inicio": "07/09/2026",
+          "semana_fim": "13/09/2026",
+          "data_inicio": "07/09/2026",
+          "data_fim": "13/09/2026",
+          "ch_ead": 1,
+          "conteudo_previsto": "Teoremas fundamentais da álgebra de Boole. Teorema de Morgan e simplificação de funções lógicas."
+        },
+        {
+          "semana": 5,
+          "semana_inicio": "14/09/2026",
+          "semana_fim": "20/09/2026",
+          "data_inicio": "14/09/2026",
+          "data_fim": "20/09/2026",
+          "ch_ead": 1,
+          "conteudo_previsto": "Soma de produtos, produtos de somas, formas canônicas (mintermos e maxitermos), Mapas de Veitch Karnaugh para 2, 3 e 4 variáveis, condições Irrelevantes e Projeto de Circuitos Combinacionais:"
+        },
+        {
+          "semana": 6,
+          "semana_inicio": "21/09/2026",
+          "semana_fim": "27/09/2026",
+          "data_inicio": "21/09/2026",
+          "data_fim": "27/09/2026",
+          "ch_ead": 1,
+          "conteudo_previsto": "Exercícios sobre simplificação e introdução ao Arduino;"
+        },
+        {
+          "semana": 7,
+          "semana_inicio": "28/09/2026",
+          "semana_fim": "04/10/2026",
+          "data_inicio": "28/09/2026",
+          "data_fim": "04/10/2026",
+          "ch_ead": 1,
+          "conteudo_previsto": "Multiplexador e Demultiplexador;"
+        },
+        {
+          "semana": 8,
+          "semana_inicio": "05/10/2026",
+          "semana_fim": "11/10/2026",
+          "data_inicio": "05/10/2026",
+          "data_fim": "11/10/2026",
+          "ch_ead": 1,
+          "conteudo_previsto": "Códigos, codificadores e decodificadores;"
+        },
+        {
+          "semana": 9,
+          "semana_inicio": "12/10/2026",
+          "semana_fim": "18/10/2026",
+          "data_inicio": "12/10/2026",
+          "data_fim": "18/10/2026",
+          "ch_ead": 1,
+          "conteudo_previsto": "Arduino - Parte 02;"
+        },
+        {
+          "semana": 10,
+          "semana_inicio": "19/10/2026",
+          "semana_fim": "25/10/2026",
+          "data_inicio": "19/10/2026",
+          "data_fim": "25/10/2026",
+          "ch_ead": 1,
+          "conteudo_previsto": "Flip flop RS ;"
+        },
+        {
+          "semana": 11,
+          "semana_inicio": "26/10/2026",
+          "semana_fim": "01/11/2026",
+          "data_inicio": "26/10/2026",
+          "data_fim": "01/11/2026",
+          "ch_ead": 1,
+          "conteudo_previsto": "Flip flop JK, T e D;"
+        },
+        {
+          "semana": 12,
+          "semana_inicio": "02/11/2026",
+          "semana_fim": "08/11/2026",
+          "data_inicio": "02/11/2026",
+          "data_fim": "08/11/2026",
+          "ch_ead": 1,
+          "conteudo_previsto": "Contadores Assíncronos;"
+        },
+        {
+          "semana": 13,
+          "semana_inicio": "09/11/2026",
+          "semana_fim": "15/11/2026",
+          "data_inicio": "09/11/2026",
+          "data_fim": "15/11/2026",
+          "ch_ead": 1,
+          "conteudo_previsto": "Contadores Síncronos;"
+        },
+        {
+          "semana": 14,
+          "semana_inicio": "16/11/2026",
+          "semana_fim": "22/11/2026",
+          "data_inicio": "16/11/2026",
+          "data_fim": "22/11/2026",
+          "ch_ead": 1,
+          "conteudo_previsto": "Aritmética binaria, somador e subtrator.;"
+        },
+        {
+          "semana": 15,
+          "semana_inicio": "23/11/2026",
+          "semana_fim": "29/11/2026",
+          "data_inicio": "23/11/2026",
+          "data_fim": "29/11/2026",
+          "ch_ead": 1,
+          "conteudo_previsto": "Conversão análogico-digital (CAD) e digital-analógico (CDA);"
+        },
+        {
+          "semana": 16,
+          "semana_inicio": "30/11/2026",
+          "semana_fim": "06/12/2026",
+          "data_inicio": "30/11/2026",
+          "data_fim": "06/12/2026",
+          "ch_ead": 1,
+          "conteudo_previsto": "Tipos de memórias digitais, registradores e geradores de clock;"
+        }
+      ]
+    }
+  ]
+}

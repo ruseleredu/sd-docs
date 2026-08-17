@@ -1,0 +1,33 @@
+{
+  "tipo": "procedimentos",
+  "geradoEm": "2026-08-17T17:17:01.242Z",
+  "totalRegistros": 4,
+  "totalDisciplinas": 1,
+  "disciplinas": [
+    {
+      "codigo": "ELT72B-S21",
+      "disciplina": "SISTEMAS DIGITAIS",
+      "professor": "Adriano Ruseler",
+      "arquivo": "20260807_160728.html",
+      "slug": "elt72b-s21",
+      "registros": [
+        {
+          "atividade": "Atividades de Complementação de Carga Horária - CCH CH de extensão a ser desenvolvida em CCH ou CHSRH: 0h",
+          "descricao": "As aulas online utilizam vídeo aulas expositivas dialogadas disponíveis no youtube e no Moodle do curso. Além disso a disciplina também explora softwares de simulação e demais ferramentas disponíveis online simuladores, calculadoras, repositórios de componentes, etc.. Todos disponibilizados ou discutidos no Moodle da disciplina."
+        },
+        {
+          "atividade": "Procedimentos de Ensino - Aulas Práticas - AP",
+          "descricao": "As aulas práticas transcorrem em laboratório, o qual utiliza protoboard e componentes discretos próprios da disciplina. Todos os experimentos abordados podem ser assistidos de simuladores, como o Tinkercad, podendo este ser acessado em https://www.tinkercad.com/. As regras bem como orientações são compartilhadas no moodle da disciplina."
+        },
+        {
+          "atividade": "Procedimentos de Avaliação",
+          "descricao": "A Nota Final (NF) será na proporção de 50% EaD (NEaD), 20% LABs (NLAB) e 30% Projeto Final (NPF); NF = 0,5*NEaD+0,2*NLAB+0,3*NPF;"
+        },
+        {
+          "atividade": "Orientações Gerais",
+          "descricao": "Moodle EaD: https://moodle.utfpr.edu.br/course/view.php?id=27864 Moodle LAB: https://moodle.utfpr.edu.br/course/view.php?id=28604"
+        }
+      ]
+    }
+  ]
+}
