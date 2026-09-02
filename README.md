@@ -113,3 +113,10 @@ Scan a single folder:
 ```bash
 node scripts/download-images.js docs/tutorials
 ```
+
+
+To clear the Rspack cache via the CLI:
+
+```bash
+rmdir /s /q node_modules\.cache\rspack
+```
